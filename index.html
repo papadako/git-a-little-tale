@@ -113,7 +113,7 @@
 
             <!-- Some historical clues -->
             <div id="history" class="step" data-x="1700" data-y="-1200" data-z="-3000" data-rotate="100" data-scale="1">
-                <h2>remind the past</h2>
+                <h2>remember the past</h2>
                 <h4><b>Before-VCS epoch</b></h4>
                 <ul>
                     <li><b>prehistory:</b> Keep your own versions</li>
@@ -163,7 +163,7 @@
             <!-- Have to find a recent comparison and evaluate what is written here! -->
             <!-- Things change rapidly -->
             <div id="comparison" class="step" data-x="3900" data-y="-1200" data-z="-3000" data-rotate="100" data-scale="1">
-                <h2>comparison</h2>
+                <h2><b> git ≈ hg</b></h2>
                 <table id="t01">
                     <tr>
                         <td class='hidden'> </td>
@@ -243,7 +243,6 @@
                         <td>Yes</td>
                         <td>Yes</td>
                     </tr>
-                    <h3><b> git ≈ hg</b></h3>
                 </table>
             </div>
             <div id="trends" class="step" data-x="570" data-y="-160" data-rotate="10" data-scale="0.4">
@@ -310,7 +309,7 @@
                 <h2>3 trees +</h2>
                 <h3 id='imgThreeTrees'>three trees <img src="images/threeTrees.svg" alt="add"></h3>
                 <ul>
-                    <li><code><span class="greyBack">working directory<span></code> → sandbox, holds the files<br></li>
+                    <li><code><span class="greyBack">working directory</span></code> → sandbox, holds the files<br></li>
                     <li><code><span class="redBack">index</span></code> → snapshot of changes proposed for next revision<br></li>
                     <li><code><span class="greenBack">HEAD</span></code> → pointer to last snapshot <br></li>
                     <li><code><span class="greenBack">HEAD</span></code> (usually) points where the branch points</li>
@@ -320,7 +319,7 @@
                 <ul>
                     <li><code><span class="yellowBack">master</span></code> default & active branch (<i>detached mode</i> → no active branch)</li>
                     <li><code><span class='shell'>$</span> touch first</code></li>
-                    <li>File added to <code><span class="greyBack">working directory<span></code></li>
+                    <li>File added to <code><span class="greyBack">working directory</span></code></li>
                 </ul>
                 <h3 id='imgAdd'>git add [&#60;file&#62;]<img src="images/add.svg" alt="add"></h3>
                 <ul>
@@ -336,7 +335,7 @@
                     <span id='imgCommit2'><img src="images/commit2.svg" alt="commit"></span></h3>
                 <ul>
                     <li>Stores the contents of the index in a new commit object</li>
-                    <li>along with who, when, and why made those changes</lli>
+                    <li>along with who, when, and why made those changes</li>
                     <li><i>parent</i> of commit object is the previous commit</li>
                     <li>Creates a SHA-1 20 byte hash using the above</li>
                     <li><code><span class="greenBack">HEAD</span></code> and <code><span class="yellowBack">master</span></code> point to new commit</li>
@@ -360,7 +359,7 @@
             </div>
             <!-- Now make a new branch -->
             <div id="branch" class="step" data-x="2700" data-y="2650" data-z="-3000" data-rotate="100" data-scale="1">
-                <h2>Grow branches</h2>
+                <h2>Grow branches &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="cactusImg" src="images/cactus.svg" alt="cactus"></h2>
                 <h3 id='imgBranch'>git branch &#60;name&#62; <img src="images/branch.svg" alt="branch"></h3>
                 <ul>
                     <li>Branching is a very cheap and widely used operation</li>
@@ -434,20 +433,20 @@
                     <li><code>git</code> tries hard and is smart enough in avoiding them</li>
                     <li>But when conflicts occur, <b>no need to be scared!</b></li>
                     <li>Let them fight and choose the winner<br>
-                        &nbsp;&nbsp;&nbsp; i.e. <b>review</b> the code and <b>resolve</b> them</li>
+                        &nbsp;&nbsp;&nbsp; i.e. <b>review</b> the code and <b>resolve</b> them
                     <br>
-                    <code class><span class="indent"><<<<<<< HEAD<br>
+                    <code><span class="indent"><<<<<<< HEAD<br>
                     I am the bug!<br>
                     =======<br>
                     No, I am the bug!<br>
                     >>>>>>> master<br>
-                    Resolve bug<br></span></code>
+                    Resolve bug<br></span></code></li>
                 </ul>
             </div>
             <!-- Remote repositories -->
             <div id="remote" class="step" data-x="-800" data-y="2350" data-z="-3000" data-rotate="80" data-scale="1">
                 <h2><span class="blueBack">↷ Share!</span></h2>
-                <h3 id='imgRemote'>git merge <img src="images/init.svg" alt="add"></h3>
+                <h3 id='imgRemote'>remote <img src="images/init.svg" alt="add"></h3>
                 <ul>
                     <li>You can initialize a repo with <code>git init</code></li>
                     <li><code><span class='shell'>$</span> git init tutorial</code><br>
@@ -457,7 +456,7 @@
             </div>
             <!-- Now clone the two branches -->
             <div id="clone" class="step" data-x="-1600" data-y="2550" data-z="-3000" data-rotate="80" data-scale="1">
-                <h2>clone !&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="sheepImg" src="images/sheep.svg" alt="sheep"></h2>
+                <h2>clone &nbsp;&nbsp;!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="sheepImg" src="images/sheep.svg" alt="sheep"></h2>
                 <h3 id='imgClone'>git merge <img src="images/init.svg" alt="add"></h3>
                 <ul>
                     <li>You can initialize a repo with <code>git init</code></li>
@@ -479,7 +478,7 @@
                     </li>
                 </ul>
             </div>
-            <!-- Now make a new branch -->
+            <!-- Now make a fetch -->
             <div id="fetch" class="step" data-x="-2700" data-y="2650" data-z="-3000" data-rotate="80" data-scale="1">
                 <h2><img id="tazImg" src="images/taz.svg" alt="taz">Taz, fetch it!</h2>
                 <h3 id='imgFetch'>git branch <img src="images/init.svg" alt="add"></h3>
@@ -603,10 +602,10 @@
                     <li>keep <b>binary files</b> in another repository (overhead per each clone)</li>
                     <li><b>delete branches</b> that <b>you are sure</b> are unneeded! (branch overhead)</li>
                     <li>check which <b>files you are commiting</b> (stop poisoning history)</li>
-                    <li><b>be careful about code formatting</b></li>
+                    <li><b>be careful about code formatting</b>
                     &nbsp;&nbsp;&nbsp;→&nbsp;useful changes are hidden in noise<br>
                     &nbsp;&nbsp;&nbsp;→&nbsp;produce conflicts<br>
-                    &nbsp;&nbsp;&nbsp;→&nbsp;make explicit commits regarding formatting changes<br>
+                    &nbsp;&nbsp;&nbsp;→&nbsp;make explicit commits regarding formatting changes<br></li>
                 </ul>
             </div>
             <!-- Intro to distributed DVCS -->

@@ -806,6 +806,14 @@ label.slider input[type=range]::-webkit-slider-thumb {
     left: 940px;
 }
 
+#branch #cactusImg {
+    display: inline;
+    width: 150px;
+    position: absolute;
+    top: 50px;
+    left: 750px;
+}
+
 #branch #imgCheckout img {
     display: inline;
     width: 800px;
@@ -859,7 +867,7 @@ label.slider input[type=range]::-webkit-slider-thumb {
     width: 100px;
     position: absolute;
     top: 20px;
-    left: 330px;
+    left: 380px;
 }
 
 #fetch #tazImg {
