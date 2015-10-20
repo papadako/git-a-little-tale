@@ -894,12 +894,12 @@ label.slider input[type=range]::-webkit-slider-thumb {
     left: 1000px;
 }
 
-#tips #imgTips img {
+#tips #imgTips {
     display: inline;
-    width: 600px;
+    width: 500px;
     position: absolute;
-    top: -200px;
-    left: 1000px;
+    top: 0px;
+    left: 1200px;
 }
 
 #workflows #imgWorkflows img {

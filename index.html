@@ -100,14 +100,14 @@
                 <ul>
                     <li><u>wise</u> programmers use it in <b>code development</b></li>
                     <li><b>track</b> and <b>provide control</b> over changes of data</li>
-                    <li>helps <b>collaboration</b>!</li>
-                    <li>allows <b>storing</b> versions</li>
-                    <li><b>restoring</b> a previous version</li>
-                    <li><b>compare changes</b> over time</li>
-                    <li>understand <b>what happened</b></li>
-                    <li>see <b>who to blame</b> for a bug</li>
-                    <li><b>consistency & integrity</b> of data </li>
-                    <li><b>backup</b> your work</li>
+                    <li>helps <b>collaboration!</b> by allowing:</li>
+                    <li><b>storing</b> versions of code</li>
+                    <li><b>restoring</b> code to a previous version</li>
+                    <li><b>comparing changes</b> over time</li>
+                    <li>understanding <b>what happened</b></li>
+                    <li>to see <b>who to blame</b> for a bug</li>
+                    <li>supports the <b>consistency & integrity</b> of data </li>
+                    <li>provides a <b>backup</b> your work</li>
                 </ul>
             </div>
 
@@ -318,7 +318,7 @@
                 <br>
                 <h3 id='imgTouch'>create our first file <img src="images/touch.svg" alt="add"></h3>
                 <ul>
-                    <li><code><span class="yellowBack">master</span></code> Current active branch (if no active branch → <i>detached mode</i>)</li>
+                    <li><code><span class="yellowBack">master</span></code> default & active branch (<i>detached mode</i> → no active branch)</li>
                     <li><code><span class='shell'>$</span> touch first</code></li>
                     <li>File added to <code><span class="greyBack">working directory<span></code></li>
                 </ul>
@@ -377,7 +377,7 @@
                         <br>&nbsp;&nbsp;&nbsp;&nbsp;in the index or the specified tree</li>
                     <li><code>&#60;name&#62;</code> a branch name or commit object (if not given, <code><span class="greenBack">HEAD</span></code>) </li>
                     <li>If modifications cannot be applied <b>cleanly</b><br>
-                        &nbsp;&nbsp;&nbsp;...<code>git</code> <b>won't switch</b> to another branch (<code>git commit</code> or <code>git stash</code>)</li>
+                        &nbsp;&nbsp;&nbsp;...<code>git</code> <b>won't switch</b> to another branch (use <code>git commit</code>/<code>git stash</code>)</li>
                     <li><code><span class='shell'>$</span> git checkout featureX</code><br>
                     </li>
                 </ul>
@@ -427,14 +427,14 @@
             <div id="mergeSecond4" class="step" data-x="800" data-y="2350" data-z="-3000" data-rotate="100" data-scale="1">
             </div>            
             <!-- Resolve conflicts -->
-            <div id="conflict" class="step" data-x="0" data-y="1800" data-z="-2700" data-rotate="90" data-scale="1">
+            <div id="conflict" class="step" data-x="0" data-y="2000" data-z="-2700" data-rotate="90" data-scale="1">
                 <h2>conflicts</h2>
                 <h3 id='imgConflict'>Merging can lead to <b><span class="red">Conflicts<img id="conflictsImg" src="images/conflicts.svg" alt="merging2"></span></b></h3>
                 <ul>
                     <li><code>git</code> tries hard and is smart enough in avoiding them</li>
                     <li>But when conflicts occur, <b>no need to be scared!</b></li>
                     <li>Let them fight and choose the winner<br>
-                        &nbsp;&nbsp;&nbsp; i.e. review the code and resolve them</li>
+                        &nbsp;&nbsp;&nbsp; i.e. <b>review</b> the code and <b>resolve</b> them</li>
                     <br>
                     <code class><span class="indent"><<<<<<< HEAD<br>
                     I am the bug!<br>
@@ -594,18 +594,19 @@
             <!-- Things change rapidly -->
             <div id="tips" class="step" data-x="-3900" data-y="-1200" data-z="-3000" data-rotate="80" data-scale="1">
                 <h2>tips</h2>
-                <h3 id='imgTips'>some guidelines<img src="images/init.svg" alt="init"></h3>
+                <h3>for you, not for the waiter!<img id="imgTips" src="images/waiter.svg" alt="init"></h3>
                 <ul>
                     <li><b>git tracks content</b> not files</li>
                     <li>be careful with <code>git mv</code> (commit both the old and new file)</li>
-                    <li><b>commit often</b> (makes easier code reviewing and bug tracking)</li>
+                    <li><b>commit often</b> (easier code review, bug tracking and merging)</li>
                     <li><b>merge master often</b> (reduces conflicts)</li>
-                    <li>keep binary files in another repository (overhead per each clone)</li>
-                    <li>delete branches that you do not need (branch overhead)</li>
-                    <li><b>be careful about formatting</b></li>
-                    <li>→&nbsp;useful changes are hidden in noise</li>
-                    <li>→&nbsp;produce conflicts</li>
-                    <li>→&nbsp;make explicit commits about formatting</li>
+                    <li>keep <b>binary files</b> in another repository (overhead per each clone)</li>
+                    <li><b>delete branches</b> that <b>you are sure</b> are unneeded! (branch overhead)</li>
+                    <li>check which <b>files you are commiting</b> (stop poisoning history)</li>
+                    <li><b>be careful about code formatting</b></li>
+                    &nbsp;&nbsp;&nbsp;→&nbsp;useful changes are hidden in noise<br>
+                    &nbsp;&nbsp;&nbsp;→&nbsp;produce conflicts<br>
+                    &nbsp;&nbsp;&nbsp;→&nbsp;make explicit commits regarding formatting changes<br>
                 </ul>
             </div>
             <!-- Intro to distributed DVCS -->
@@ -689,6 +690,7 @@
             // Need it when going back
             $('#merge').get(0).addEventListener('impress:stepenter', function () {
                 document.getElementById("imgMergeImage").src = "images/merge.svg";
+                document.getElementById("imgMergeImageSecond").src = "images/mergeSecond.svg";
             });
             $('#merge1').get(0).addEventListener('impress:stepenter', function () {
                 document.getElementById("imgMergeImage").src = "images/merge1.svg";
