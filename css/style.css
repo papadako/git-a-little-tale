@@ -862,6 +862,14 @@ label.slider input[type=range]::-webkit-slider-thumb {
     left: 330px;
 }
 
+#fetch #tazImg {
+    display: inline;
+    width: 120px;
+    position: absolute;
+    top: 20px;
+    left: -120px;
+}
+
 #fetch #imgFetch img {
     display: inline;
     width: 600px;
