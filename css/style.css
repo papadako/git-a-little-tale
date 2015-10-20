@@ -188,14 +188,14 @@ code.snippet .comment { font-size: 0.8em; color: #777; }
     content: "-";
     text-shadow: 0 0 1px rgba(10,10,10,1);
     margin-right: 0.5em;
-/*        font-family: 'fontello';
-        display: inline-block;
-        font-size: 1em;
-        line-height: 0;
-        margin-left: - 1.5em;
-        width: 1.5em;
-        color: $primary-color;
-        content: '\e800';    */
+    /*        font-family: 'fontello';
+            display: inline-block;
+            font-size: 1em;
+            line-height: 0;
+            margin-left: - 1.5em;
+            width: 1.5em;
+            color: $primary-color;
+            content: '\e800';    */
 }
 
 .step ul b { font-size: 1.0em }
@@ -854,6 +854,14 @@ label.slider input[type=range]::-webkit-slider-thumb {
     left: 1000px;
 }
 
+#clone #sheepImg {
+    display: inline;
+    width: 100px;
+    position: absolute;
+    top: 20px;
+    left: 330px;
+}
+
 #fetch #imgFetch img {
     display: inline;
     width: 600px;
@@ -950,6 +958,13 @@ code .indent {
     background: yellow;
 }
 
+/* Try to use fb color */
+.blueBack{
+    background: #3B5998;
+    color: white;
+    text-transform: initial
+}
+
 .pinkBack{
     background: HotPink;
 }
@@ -972,6 +987,11 @@ code .indent {
 
 .red{
     color:red;
+}
+
+.sub{
+    vertical-align: sub;
+    font-size: 40%;
 }
 
 @keyframes translate-epikurus {
