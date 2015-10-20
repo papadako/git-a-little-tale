@@ -970,6 +970,10 @@ code .indent {
     color:green;
 }
 
+.red{
+    color:red;
+}
+
 @keyframes translate-epikurus {
     0%   { 
         transform: perspective(1000px) translateY(-20px);

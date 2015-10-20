@@ -246,7 +246,7 @@
                     <h3><b> git ≈ hg</b></h3>
                 </table>
             </div>
-            <div id="trends" class="step" data-x="750" data-y="-200" data-rotate="10" data-scale="0.4">
+            <div id="trends" class="step" data-x="570" data-y="-160" data-rotate="10" data-scale="0.4">
                 <h2>Trends</h2>
                 <img style="float:right" src="images/trends.jpg" alt="Linus Torvalds">
                 <h3><b> git has better marketing</b></h3>
@@ -427,14 +427,20 @@
             <div id="mergeSecond4" class="step" data-x="800" data-y="2350" data-z="-3000" data-rotate="100" data-scale="1">
             </div>            
             <!-- Resolve conflicts -->
-            <div id="conflict" class="step" data-x="0" data-y="1800" data-z="-2000" data-rotate="90" data-scale="1">
+            <div id="conflict" class="step" data-x="0" data-y="1800" data-z="-2500" data-rotate="90" data-scale="1">
                 <h2>conflicts</h2>
-                <h3 id='imgConflict'>git merge <img src="images/init.svg" alt="add"></h3>
+                <h3 id='imgConflict'>Merging can lead to <b><span class="red">Conflicts</span></b></h3>
                 <ul>
-                    <li>You can initialize a repo with <code>git init</code></li>
-                    <li><code><span class='shell'>$</span> git init tutorial</code><br>
-                    <li>A new directory <code>tutorial</code> is created</li>
-                    <li>Inside <code>tutorial</code>, <code>.git</code> directory holds all repository information</li>
+                    <li><code>git</code> tries hard and is smart enough in avoiding them</li>
+                    <li>But when conflicts occur, <b>no need to be scared!</b></li>
+                    <li>Just <u>review the code and resolve them</u></li>
+                    <br>
+                    <code class><span class="indent"><<<<<<< HEAD<br>
+                    This is the bug!<br>
+                    =======<br>
+                    No, this is the bug!<br>
+                    >>>>>>> master<br>
+                    Resolve bug<br></span></code>
                 </ul>
             </div>
             <!-- Remote repositories -->
