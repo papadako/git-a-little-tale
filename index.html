@@ -1,0 +1,677 @@
+<!doctype html>
+
+<!--
+
+    Welcome to the light side of the source, young padawan.
+
+    One step closer to learn something interesting you are...
+
+                               ____
+                            _.' :  `._
+                        .-.'`.  ;   .'`.-.
+               __      / : ___\ ;  /___ ; \      __
+             ,'_ ""--.:__;".-.";: :".-.":__;.--"" _`,
+             :' `.t""--.. '<@.`;_  ',@>` ..--""j.' `;
+                  `:-.._J '-.-'L__ `-- ' L_..-;'
+                    "-.__ ;  .-"  "-.  : __.-"
+                        L ' /.------.\ ' J
+                         "-.   "--"   .-"
+                        __.l"-:_JL_;-";.__
+                     .-j/'.;  ;""""  / .'\"-.
+                   .' /:`. "-.:     .-" .';  `.
+                .-"  / ;  "-. "-..-" .-"  :    "-.
+             .+"-.  : :      "-.__.-"      ;-._   \
+             ; \  `.; ;                    : : "+. ;
+             :  ;   ; ;                    : ;  : \:
+             ;  :   ; :                    ;:   ;  :
+            : \  ;  :  ;                  : ;  /  ::
+            ;  ; :   ; :                  ;   :   ;:
+            :  :  ;  :  ;                : :  ;  : ;
+            ;\    :   ; :                ; ;     ; ;
+            : `."-;   :  ;              :  ;    /  ;
+             ;    -:   ; :              ;  : .-"   :
+             :\     \  :  ;            : \.-"      :
+              ;`.    \  ; :            ;.'_..--  / ;
+              :  "-.  "-:  ;          :/."      .'  :
+               \         \ :          ;/  __        :
+                \       .-`.\        /t-""  ":-+.   :
+                 `.  .-"    `l    __/ /`. :  ; ; \  ;
+                   \   .-" .-"-.-"  .' .'j \  /   ;/
+                    \ / .-"   /.     .'.' ;_:'    ;
+                     :-""-.`./-.'     /    `.___.'
+                           \ `t  ._  /
+                            "-.t-._:'
+
+-->
+
+<!--
+    A lot of this presentation is based on the "CSS 3D transforms" presentaion
+    from meet.js summit by Bartek Szopka  http://bartaz.github.io/meetjs/css3d-summit/#/title
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>git - a little story - by Papadakos Panagiotis</title>
+
+        <script>
+            (function (d, ua) {
+                if ((ua.indexOf('chrome') > -1) || (ua.indexOf('safari') > -1 && ua.indexOf("mobile") === -1)) {
+                    d.className += " supported ";
+                }
+            })(document.documentElement, navigator.userAgent.toLowerCase());
+        </script>
+
+        <meta name="description" content="git - A short story">
+        <meta name="author" content="Papadakos Panagiotis" />
+
+        <link href="http://fonts.googleapis.com/css?family=Ubuntu:700|Ubuntu+Mono|Crimson+Text:400,700,400italic" rel="stylesheet" />
+        <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+        <link href="css/style.css" rel="stylesheet" />
+        <script src="js/prefixfree.js"></script>
+    </head>
+    <body>
+
+        <div class="fallback-message">
+            <p>This presentation was build for latest <b>Chrome</b> or <b>Safari</b> browser.</p>
+            <p>You are viewing simplified view, but most of the CSS 3D will not work for you, sorry.</p>
+        </div>
+
+        <div id="impress">
+
+            <div id="title" class="step">
+                <h1>
+                    <span class="css"><span class="d3">git</span></span><br>
+                    <span class="transforms"><em>a little story</em></span>
+                </h1>
+                <span class="author">
+                    <i>by</i><br/>
+                    <span class="name">Panagiotis Papadakos</span> <a href="mailto:papadako@gmail.com">papadako@gmail.com</a>
+                </span>
+                <span id="imgGit">
+                    <img src="images/git.svg" alt="git">
+                </span>
+
+            </div>
+            <!-- First Slide -->
+            <div id="intro" class="step" data-x="500" data-y="-1200" data-z="-3000" data-rotate="100" data-scale="1">
+                <h2>intro to VCS</h2>
+                <h3><b> Version Control Systems (VCS)</b></h3>
+                <ul>
+                    <li><u>wise</u> programmers use it in <b>code development</b></li>
+                    <li><b>track</b> and <b>provide control</b> over changes of data</li>
+                    <li>helps <b>collaboration</b>!</li>
+                    <li>allows <b>storing</b> versions</li>
+                    <li><b>restoring</b> a previous version</li>
+                    <li><b>compare changes</b> over time</li>
+                    <li>understand <b>what happened</b></li>
+                    <li>see <b>who to blame</b> for a bug</li>
+                    <li><b>consistency & integrity</b> of data </li>
+                    <li><b>backup</b> your work</li>
+                </ul>
+            </div>
+
+            <!-- Some historical clues -->
+            <div id="history" class="step" data-x="1500" data-y="-1200" data-z="-3000" data-rotate="100" data-scale="1">
+                <h2>history</h2>
+                <h4><b>Before-VCS epoch</b></h4>
+                <ul>
+                    <li><b>prehistory:</b> Keep your own versions</li>
+                    <li><b>stone-age: </b> Use diff, emails and tars</li>
+                </ul>
+                <h4><b>Centralized VCS (CVCS) epoch</b></h4>
+                <ul>
+                    <li><b>Bronze age:</b> CVS, a wrong intro </li>
+                    <li><b>Iron age:</b> SVN, perforce </li>
+                </ul>
+                <h4><b>Distributed VCS (DVCS) epoch</b></h4>
+                <ul>
+                    <li><b>Modern era:</b> bazaar, arch, monotone, darcs, bitkeeper </li>
+                </ul>
+                <h4><b>Linus and the war of (D)VCS</b> <img src="images/torvalds.jpg" alt="Linus Torvalds"></h4>
+                <ul>
+                    <li>Linus was not happy with any of the above!</li>
+                    <li>He stepped out of Linux development for a month to create his second child, <b>git</b></li>
+                    <li><b>mercurial</b>, another child of the war </li>
+                    <li><b>git wins</b> the war, becomes the standard in Open Source community, followed by mercurial</li>
+                </ul>
+            </div>
+            <!-- Intro to distributed DVCS -->
+            <div id="distributed" class="step" data-x="2500" data-y="-1200" data-z="-3000" data-rotate="100" data-scale="1">
+                <h2>DVCS vs CVCS</h2>
+                <h3 id="imgCentr">Centralized <img src="images/centralized.svg" alt="centralized"></h3>
+                <ul>
+                    <li>Only a single copy of the repository <b>(unsafe)</b></li>
+                    <li>Communication with the server for each operation <b>(slow)</b></li>
+                    <li>Server is offline or corrupted; no job done <b>(offline cost)</b></li>
+                    <li>Everyone has access to the repository <b>(no access control)</b></li>
+                    <li>Everything is stored to the server; even failed things <b>(redundacy)</b></li>
+                    <li><b>Pros:</b> Rather simple interaction <b>(not flexible though)</b></li>
+                </ul>
+
+                <h3 id="imgDistr">Distributed <img src="images/distributed.svg" alt="distributed"></h3>
+                <ul>
+                    <li>More powerful and flexible workflows <b>(promote collaboration)</b></li>
+                    <li>Each user has its own repository <b>(safety)</b></li>
+                    <li>Operations are done locally <b>(performance)</b></li>
+                    <li>Branches is the way to go <b>(easy to create, delete and merge)</b></li>
+                    <li>No need to give write access control <b>(let them read but not write)</b></li>
+                    <li><b>Cons:</b> Initial checkout is more costly <b>(download the whole history)</b></li>
+                    <li><b>Cons:</b> A little more difficult to grasp UI <b>(interaction overhead)</b> </li>
+                </ul>
+            </div>
+            <!-- Have to find a recent comparison and evaluate what is written here! -->
+            <!-- Things change rapidly -->
+            <div id="comparison" class="step" data-x="3500" data-y="-1200" data-z="-3000" data-rotate="100" data-scale="1">
+                <h2>comparison</h2>
+                <table id="t01">
+                    <tr>
+                        <td class='hidden'> </td>
+                        <th><b>SVN</b></th>
+                        <th><b>Mercurial (hg)</b></th>
+                        <th><b>git</b></th>
+                    </tr>
+                    <tr>
+                        <td class='left'><b>Type</b></td>
+                        <td>CVCS</td>
+                        <td>DVCS</td>
+                        <td>DVCS</td>
+                    </tr>
+                    <tr>
+                        <td class='left'><b>Storage method</b></td>
+                        <td>Changeset/Snapshot</td>
+                        <td>Changeset</td>
+                        <td>Snapshot</td>
+                    </tr>
+                    <tr>
+                        <td class='left'><b>Learning Curve</b></td>
+                        <td>Easy</td>
+                        <td>Moderate</td>
+                        <td>Steep</td>
+                    </tr>
+                    <tr>
+                        <td class='left'><b>Developed in</b></td>
+                        <td>C</td>
+                        <td>Python</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td class='left'><b>Speed</b></td>
+                        <td>Slow</td>
+                        <td>Fast</td>
+                        <td>Very Fast</td>
+                    </tr>
+                    <tr>
+                        <td class='left'><b>Branching</b></td>
+                        <td>Easy</td>
+                        <td>Free</td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td class='left'><b>Merging</b></td>
+                        <td>Difficult</td>
+                        <td>Pretty easy</>
+                        <td>Piece of cake</td>
+                    </tr>
+                    <tr>
+                        <td class='left'><b>Data Integrity</b></td>
+                        <td>Primitive</td>
+                        <td>SHA-1</td>
+                        <td>SHA-1</td>
+                    </tr>
+                    <tr>
+                        <td class='left'><b>Space Requirements</b></td>
+                        <td>Big</td>
+                        <td>Small (efficient for small projects)</td>
+                        <td>Small (efficient for big projects)</td>
+                    </tr>
+                    <tr>
+                        <td class='left'><b>History rewriting</b></td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td class='left'><b>VCS Collaboration</b></td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td class='left'><b>Integration with IDEs</b></td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <h3><b> git ≈ hg</b></h3>
+                </table>
+            </div>
+            <div id="trends" class="step" data-x="750" data-y="-100" data-rotate="10" data-scale="0.4">
+                <h2>Trends</h2>
+                <img style="float:right" src="images/trends.jpg" alt="Linus Torvalds">
+                <h3><b> git has better marketing</b></h3>
+            </div>
+
+            <!--==================================================-->
+            <!-- SECOND PART: BASIC GIT USAGE (local) -->
+
+            <!-- Introduction of us to git -->
+            <div id="hi" class="step" data-x="1800" data-y="800" data-z="-3000" data-rotate="100" data-scale="1">
+                <h2>hi, I am git</h2>
+                <h3>Who are you?</h3>
+                <ul>
+                    <li>So, you <u>installed</u> git!</li>
+                    <li>Git has to know some things about you, like your name, email, settings...</li>
+                    <li><code><span class='shell'>$</span> git config --global user.name "John Doe"</code></li>
+                    <li><code><span class='shell'>$</span> git config --global user.email johndoe@example.com</code></li>
+                    <li>To check what git knows about us and other settings</li>
+                    <li><code><span class='shell'>$</span> git config --list</code><br>
+                        <code>
+                            <span class='indent'>
+                                user.name=John Doe<br>
+                                user.email=johndoe@example.com<br>
+                                color.status=auto<br>
+                                color.branch=auto<br>
+                                color.interactive=auto<br>
+                                color.diff=auto<br>
+                                ...
+                            </span>
+                        </code>
+                    </li>
+                </ul>
+            </div>
+            <!-- Initialize your first repo -->
+            <div id="init" class="step" data-x="2800" data-y="900" data-z="-3000" data-rotate="100" data-scale="1">
+                <h2>your first repo</h2>
+                <h3 id='imgInit'>git init <img src="images/init.svg" alt="init"></h3>
+                <ul>
+                    <li>You can initialize a repo with <code>git init</code></li>
+                    <li><code><span class='shell'>$</span> git init tutorial</code><br>
+                    <li>A new directory <code>tutorial</code> is created</li>
+                    <li>Inside <code>tutorial</code>, <code>.git</code> directory holds all repository information</li>
+                </ul>
+                <h3>git status</h3>
+                <ul>
+                    <li>An any time you can check your status with <code>git status</code></li>
+                    <li>Rather informative command, but not after init!</li>
+                    <li><code><span class='shell'>$</span> git status</code><br>
+                        <code>
+                            <span class='indent'>
+                                On branch master<br>
+                                Initial commit<br>
+                                nothing to commit (create/copy files and use "git add" to track)</br>
+                            </span>
+                        </code>
+                    </li>
+                </ul>
+            </div>
+            <!-- Now add content to the repo -->
+            <div id="add" class="step" data-x="3750" data-y="1000" data-z="-3000" data-rotate="100" data-scale="1">
+                <h2>3 trees + add</h2>
+                <h3 id='imgThreeTrees'>three trees <img src="images/threeTrees.svg" alt="add"></h3>
+                <ul>
+                    <li><code>working directory</code> → sandbox, holds the files<br></li>
+                    <li><code>index</code> → snapshot of changes proposed for next revision<br></li>
+                    <li><code>HEAD</code> → pointer to last snapshot <br></li>
+                    <li><code>HEAD</code> (usually) points where the branch points</li>
+                </ul>
+                <br>
+                <h3 id='imgTouch'>create our first file <img src="images/touch.svg" alt="add"></h3>
+                <ul>
+                    <li><code><span class='shell'>$</span> touch first</code></li>
+                    <li>File added to <code>working directory</code></li>
+                </ul>
+                <h3 id='imgAdd'>git add [&#60;file&#62;]<img src="images/add.svg" alt="add"></h3>
+                <ul>
+                    <li>Add content to the staging index</li>
+                    <li><code><span class='shell'>$</span> git add first</code><br>
+                    <li>File added to  <code>index</code></li>
+                </ul>
+            </div>
+            <!-- Now commit content to the repo -->
+            <div id="commit" class="step" data-x="3600" data-y="2800" data-z="-3000" data-rotate="100" data-scale="1">
+                <h2>commit & log</h2>
+                <h3 id='imgCommit'>git commit [&#60;file&#62;]<img src="images/commit.svg" alt="add">
+                    <span id='imgCommit2'><img src="images/commit2.svg" alt="commit"></span></h3>
+                <ul>
+                    <li>Stores the contents of the index in a new commit object</li>
+                    <li>along with who, when, and why made those changes</lli>
+                    <li><i>parent</i> of commit object is the previous commit</li>
+                    <li>Creates a SHA-1 20 byte hash based on the above information</li>
+                    <li><code>HEAD</code> and <code>master</code> point to new commit</li>
+                    <li><code><span class='shell'>$</span> git commit first</code></li>
+                    <li>Add & commit the file at the same time</li>
+                    <li><code><span class='shell'>$</span> git commit -a first</code><br>
+                </ul>
+                <h3>git log</h3>
+                <ul>
+                    <li><code><span class='shell'>$</span> git log --decorate --graph</code><br>
+                        <code>
+                            <span class='indent'>
+                                *&nbsp;commit <span class="orange">8484f4fccb80e625b7c05cdc214014a32d176777</span> <span class="blue">(HEAD)</span><br>
+                                |&nbsp;Author: Panagiotis Papadakos &#60;papadako@gmail.com&#62;<br>
+                                |&nbsp;Date:   Tue Oct 20 01:15:40 2015 +0300<br>
+                                |&nbsp;&nbsp;&nbsp;Add some content<br>
+                            </span>
+                        </code>
+                    </li>
+                </ul>
+            </div>
+            <!-- Now make a new branch -->
+            <div id="branch" class="step" data-x="2600" data-y="2600" data-z="-3000" data-rotate="100" data-scale="1">
+                <h2>branching</h2>
+                <h3 id='imgBranch'>git branch &#60;name&#62; <img src="images/branch.svg" alt="branch"></h3>
+                <ul>
+                    <li>Branching is a very cheap and widely used operation</li>
+                    <li>Develop features/correct bugs in isolation</li>
+                    <li>Just creates a new pointer where <code>HEAD</code> points</li>
+                    <li><code><span class='shell'>$</span> git branch featureX</code><br>
+                    <li>At each time only one active branch (marked with yellow)</li>
+                    <li><code>master</code> is the default branch (<code>commit</code> still updates the <code>master</code> pointer)</li>
+                </ul>
+                <h3 id='imgCheckout'>git checkout [&#60;name&#62;] <img src="images/checkout.svg" alt="checkout"></h3>
+                <ul>
+                    <li>Switch to another branch</li>
+                    <li>Updates files in the working tree to match the version
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;in the index or the specified tree</li>
+                    <li><code>&#60;name&#62;</code> a branch name or commit object (if not given, <code>HEAD</code>) </li>
+                    <li>Keeps modifications in working tree</li>
+                    <li>If modifications cannot be applied <b>cleanly</b></li>
+                    <li>→&nbsp;<code>git</code> <b>won't switch</b> to another branch (<code>git commit</code> or <code>git stash</code>)</li>
+                    <li><code><span class='shell'>$</span> git checkout bugX</code><br>
+                    </li>
+                </ul>
+            </div>
+            <!-- Now merge the two branches -->
+            <div id="merge" class="step" data-x="1600" data-y="2400" data-z="-3000" data-rotate="100" data-scale="1">
+                <h2>merging</h2>
+                <h3 id='imgMerge'>git merge &#60;commit&#62; <img id="imgMergeImage" src="images/checkout.svg" alt="add"></h3>
+                <ul>
+                    <li><b>Easy branching without easy merging has no value!</b></li>
+                    <li>Join two or more development histories (branches) together</li>
+                    <li>Assume we made a number of commits in branch <code>featureX</code></li>
+                    <li>Incorporate them in <code>master</code> by:
+                    <li>→&nbsp;<code>git checkout master</code></li>
+                    <li>→&nbsp;<code>git merge featureX</code></li>
+                    <li>The simplest of all merges: fast forward! </li>
+                    <li><code>git</code> has a lot of merging policies</li>
+                </ul>
+            </div>
+            <div id="merge1" class="step" data-x="1600" data-y="2400" data-z="-3000" data-rotate="100" data-scale="1">
+            </div>
+            <div id="merge2" class="step" data-x="1600" data-y="2400" data-z="-3000" data-rotate="100" data-scale="1">
+            </div>         
+            <div id="merge3" class="step" data-x="1600" data-y="2400" data-z="-3000" data-rotate="100" data-scale="1">
+            </div>
+            <!-- Resolve conflicts -->
+            <div id="mergePart2" class="step" data-x="800" data-y="2000" data-z="-3000" data-rotate="100" data-scale="1">
+                <h2>merging (2) </h2>
+                <ul>
+                    <li>You can initialize a repo with <code>git init</code></li>
+                    <li><code><span class='shell'>$</span> git init tutorial</code><br>
+                    <li>A new directory <code>tutorial</code> is created</li>
+                    <li>Inside <code>tutorial</code>, <code>.git</code> directory holds all repository information</li>
+                </ul>
+            </div>
+            <!-- Resolve conflicts -->
+            <div id="conflict" class="step" data-x="0" data-y="1800" data-z="-2000" data-rotate="90" data-scale="1">
+                <h2>conflicts</h2>
+                <h3 id='imgConflict'>git merge <img src="images/init.svg" alt="add"></h3>
+                <ul>
+                    <li>You can initialize a repo with <code>git init</code></li>
+                    <li><code><span class='shell'>$</span> git init tutorial</code><br>
+                    <li>A new directory <code>tutorial</code> is created</li>
+                    <li>Inside <code>tutorial</code>, <code>.git</code> directory holds all repository information</li>
+                </ul>
+            </div>
+            <!-- Remote repositories -->
+            <div id="remote" class="step" data-x="-800" data-y="2000" data-z="-3000" data-rotate="80" data-scale="1">
+                <h2>remote</h2>
+                <h3 id='imgRemote'>git merge <img src="images/init.svg" alt="add"></h3>
+                <ul>
+                    <li>You can initialize a repo with <code>git init</code></li>
+                    <li><code><span class='shell'>$</span> git init tutorial</code><br>
+                    <li>A new directory <code>tutorial</code> is created</li>
+                    <li>Inside <code>tutorial</code>, <code>.git</code> directory holds all repository information</li>
+                </ul>
+            </div>
+            <!-- Now clone the two branches -->
+            <div id="clone" class="step" data-x="-1600" data-y="2400" data-z="-3000" data-rotate="80" data-scale="1">
+                <h2>cloning</h2>
+                <h3 id='imgClone'>git merge <img src="images/init.svg" alt="add"></h3>
+                <ul>
+                    <li>You can initialize a repo with <code>git init</code></li>
+                    <li><code><span class='shell'>$</span> git init tutorial</code><br>
+                    <li>A new directory <code>tutorial</code> is created</li>
+                    <li>Inside <code>tutorial</code>, <code>.git</code> directory holds all repository information</li>
+                </ul>
+                <h3>merge policies</h3>
+                <ul>
+                    <li>An any time you can check your status with <code>git status</code></li>
+                    <li><code><span class='shell'>$</span> git status</code><br>
+                        <code>
+                            <span class='indent'>
+                                On branch master<br>
+                                Initial commit<br>
+                                nothing to commit (create/copy files and use "git add" to track)</br>
+                            </span>
+                        </code>
+                    </li>
+                </ul>
+            </div>
+            <!-- Now make a new branch -->
+            <div id="fetch" class="step" data-x="-2600" data-y="2600" data-z="-3000" data-rotate="80" data-scale="1">
+                <h2>fetching</h2>
+                <h3 id='imgFetch'>git branch <img src="images/init.svg" alt="add"></h3>
+                <ul>
+                    <li>You can initialize a repo with <code>git init</code></li>
+                    <li><code><span class='shell'>$</span> git init tutorial</code><br>
+                    <li>A new directory <code>tutorial</code> is created</li>
+                    <li>Inside <code>tutorial</code>, <code>.git</code> directory holds all repository information</li>
+                </ul>
+                <h3>git checkout</h3>
+                <ul>
+                    <li>An any time you can check your status with <code>git status</code></li>
+                    <li><code><span class='shell'>$</span> git status</code><br>
+                        <code>
+                            <span class='indent'>
+                                On branch master<br>
+                                Initial commit<br>
+                                nothing to commit (create/copy files and use "git add" to track)</br>
+                            </span>
+                        </code>
+                    </li>
+                </ul>
+            </div>
+            <!-- Now pull content to the repo -->
+            <div id="pull" class="step" data-x="-3600" data-y="2800" data-z="-3000" data-rotate="80" data-scale="1">
+                <h2>pull</h2>
+                <h3 id='imgPull'>git commit  <img src="images/init.svg" alt="add"></h3>
+                <ul>
+                    <li>You can initialize a repo with <code>git init</code></li>
+                    <li><code><span class='shell'>$</span> git init tutorial</code><br>
+                    <li>A new directory <code>tutorial</code> is created</li>
+                    <li>Inside <code>tutorial</code>, <code>.git</code> directory holds all repository information</li>
+                </ul>
+                <h3>git log</h3>
+                <ul>
+                    <li>An any time you can check your status with <code>git status</code></li>
+                    <li><code><span class='shell'>$</span> git status</code><br>
+                        <code>
+                            <span class='indent'>
+                                On branch master<br>
+                                Initial commit<br>
+                                nothing to commit (create/copy files and use "git add" to track)</br>
+                            </span>
+                        </code>
+                    </li>
+                </ul>
+            </div>
+            <!-- Now add content to the repo -->
+            <div id="push" class="step" data-x="-3750" data-y="1000" data-z="-3000" data-rotate="80" data-scale="1">
+                <h2>push</h2>
+                <h3 id='imgPush'>git push <img src="images/init.svg" alt="add"></h3>
+                <ul>
+                    <li>You can initialize a repo with <code>git init</code></li>
+                    <li><code><span class='shell'>$</span> git init tutorial</code><br>
+                    <li>A new directory <code>tutorial</code> is created</li>
+                    <li>Inside <code>tutorial</code>, <code>.git</code> directory holds all repository information</li>
+                </ul>
+                <h3>git status</h3>
+                <ul>
+                    <li>An any time you can check your status with <code>git status</code></li>
+                    <li><code><span class='shell'>$</span> git status</code><br>
+                        <code>
+                            <span class='indent'>
+                                On branch master<br>
+                                Initial commit<br>
+                                nothing to commit (create/copy files and use "git add" to track)</br>
+                            </span>
+                        </code>
+                    </li>
+                </ul>
+            </div>
+            <!-- Danger -->
+            <div id="danger" class="step" data-x="-2800" data-y="900" data-z="-3000" data-rotate="80" data-scale="1">
+                <h2>dangerrrr!</h2>
+                <h3 id='imgDanger'>git init <img src="images/init.svg" alt="init"></h3>
+                <ul>
+                    <li>You can initialize a repo with <code>git init</code></li>
+                    <li><code><span class='shell'>$</span> git init tutorial</code><br>
+                    <li>A new directory <code>tutorial</code> is created</li>
+                    <li>Inside <code>tutorial</code>, <code>.git</code> directory holds all repository information</li>
+                </ul>
+                <h3>git status</h3>
+                <ul>
+                    <li>An any time you can check your status with <code>git status</code></li>
+                    <li><code><span class='shell'>$</span> git status</code><br>
+                        <code>
+                            <span class='indent'>
+                                On branch master<br>
+                                Initial commit<br>
+                                nothing to commit (create/copy files and use "git add" to track)</br>
+                            </span>
+                        </code>
+                    </li>
+                </ul>
+            </div>
+            <!-- Introduction of us to git -->
+            <div id="other" class="step" data-x="-1800" data-y="800" data-z="-3000" data-rotate="80" data-scale="1">
+                <h2>other commands</h2>
+                <h3 id='imgOther'>git tag <img src="images/init.svg" alt="init"></h3>
+                <ul>
+                    <li>Add a label in a commit object</li>
+                    <li><code>git tag -a v4.4.4 -m 'my lucky version'</code></li>
+                </ul>
+                <h3>git stash</h3>
+                <h3>git bisect</h3>
+                <h3>git blame</h3>
+                <h3>git mv</h3>
+                <h3>git show</h3>
+            </div>
+            <!-- Things change rapidly -->
+            <div id="tips" class="step" data-x="-3500" data-y="-1200" data-z="-3000" data-rotate="80" data-scale="1">
+                <h2>tips</h2>
+                <h3 id='imgTips'>some guidelines<img src="images/init.svg" alt="init"></h3>
+                <ul>
+                    <li><b>git tracks content</b> not files</li>
+                    <li>be careful with <code>git mv</code> (commit both the old and new file)</li>
+                    <li><b>commit often</b> (makes easier code reviewing and bug tracking)</li>
+                    <li><b>merge master often</b> (reduces conflicts)</li>
+                    <li>keep binary files in another repository (overhead per each clone)</li>
+                    <li>delete branches that you do not need (branch overhead)</li>
+                    <li><b>be careful about formatting</b></li>
+                    <li>→&nbsp;useful changes are hidden in noise</li>
+                    <li>→&nbsp;produce conflicts</li>
+                    <li>→&nbsp;make explicit commits about formatting</li>
+                </ul>
+            </div>
+            <!-- Intro to distributed DVCS -->
+            <div id="workflows" class="step" data-x="-2500" data-y="-1200" data-z="-3000" data-rotate="80" data-scale="1">
+                <h2>workflows</h2>
+                <h3 id="imgWorkflows">Centralized <img src="images/centralized.svg" alt="centralized"></h3>
+                <ul>
+                    <li>Only a single copy of the repository <b>(unsafe)</b></li>
+                    <li>Communication with the server for each operation <b>(slow)</b></li>
+                    <li>Server is offline or corrupted; no job done <b>(offline cost)</b></li>
+                    <li>Everyone has access to the repository <b>(no access control)</b></li>
+                    <li>Everything is stored to the server; even failed things <b>(redundacy)</b></li>
+                    <li><b>Pros:</b> Rather simple interaction <b>(not flexible though)</b></li>
+                </ul>
+
+            </div>
+            <!-- Some historical clues -->
+            <div id="repositories" class="step" data-x="-1500" data-y="-1200" data-z="-3000" data-rotate="80" data-scale="1">
+                <h2>online repositories</h2>
+                <h3 id="imgRepositories">Centralized <img src="images/centralized.svg" alt="centralized"></h3>
+                <ul>
+                    <li>Only a single copy of the repository <b>(unsafe)</b></li>
+                    <li>Communication with the server for each operation <b>(slow)</b></li>
+                    <li>Server is offline or corrupted; no job done <b>(offline cost)</b></li>
+                    <li>Everyone has access to the repository <b>(no access control)</b></li>
+                    <li>Everything is stored to the server; even failed things <b>(redundacy)</b></li>
+                    <li><b>Pros:</b> Rather simple interaction <b>(not flexible though)</b></li>
+                </ul>
+            </div>
+            <!-- First Slide -->
+            <div id="hippalus" class="step" data-x="-500" data-y="-1200" data-z="-3000" data-rotate="80" data-scale="1">
+                <h2>git story of <a href="http://www.ics.forth.gr/isl/Hippalus">hippalus</a></h2>
+                <h3>A preference enriched faceted search exploratory system</h3>
+                <video id="hippalusVideo" preload="auto" loop autoplay width="1024" height="768">
+                    <source src="video/hippalus.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <!-- Epikurus image was taken by http://www.jazclass.aust.com/happiness/hap02.htm -->
+            <!-- If there are copyright problems using this image, please contact me and I'll remove it-->
+            <div id="epikurus" class="step" data-x="0" data-y="0" data-z="-50000" data-rotate="0" data-scale="0.2">
+                <img src="images/epicurus.gif" alt="Epicurus">
+                <h3>Epicurus advices:<br> <b>Quit procrastinating & learn git</b></h3>
+                <p>
+                    Γεγόναμεν ἅπαξ, δὶς δὲ οὐκ ἔστι γενέσθαι<br>δεῖ δὲ τὸν αἰῶνα μηκέτι εἶναι<br> σὺ δὲ οὐκ ὢν τῆς αὔριον κύριος ἀναβάλλῃ τὸ χαῖρο<br> ὁ δὲ βίος μελλησμῷ παραπόλλυται καὶ εἷς ἕκαστος ἡμῶν ἀσχολούμενος ἀποθνῄσκει.
+                </p>
+                <br>
+                <p> We have been born once and cannot be born a second time;
+                    for all eternity we shall no longer exist.
+                    But you, although you are not in control of tomorrow, are postponing your happiness.
+                    Life is wasted by delaying, and each one of us dies without enjoying leisure.</p>
+            </div>
+
+
+
+            <div id="end" class="step" data-x="0" data-y="0" data-z="1000" data-rotate="0" data-scale="0.8">
+                <span class="author">
+                    <i>by</i><br/>
+                    <span class="name">Panagiotis Papadakos</span>
+                    <br>
+                    <a href="mailto:papadako@gmail.com">papadako@gmail.com</a>
+                    <br>
+                    You can clone and contribute
+                    <br>
+                    <code>https://github.com/papadako/git-a-little-story</code>
+                </span>
+            </div>
+
+        </div>
+
+        <script src="js/impress.js"></script>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+        <script src="js/script.js"></script>
+
+        <script type="text/javascript">
+            impress().init();
+            document.getElementById('hippalusVideo').play();
+
+            $('#merge1').step(function () {
+                document.getElementById("imgMergeImage").src = "images/merge1.svg";
+            });
+            $('#merge2').step(function () {
+                document.getElementById("imgMergeImage").src = "images/merge2.svg";
+            });
+            $('#merge3').step(function () {
+                document.getElementById("imgMergeImage").src = "images/merge3.svg";
+            });            
+        </script>
+    </body>
+</html>
