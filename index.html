@@ -245,6 +245,7 @@
                     </tr>
                 </table>
             </div>
+       
             <div id="trends" class="step" data-x="570" data-y="-160" data-rotate="10" data-scale="0.4">
                 <h2>Trends</h2>
                 <img style="float:right" src="images/trends.jpg" alt="Linus Torvalds">
@@ -435,13 +436,13 @@
                     <li>But when conflicts occur, <b>no need to be scared!</b></li>
                     <li>Let them fight and choose the winner<br>
                         &nbsp;&nbsp;&nbsp; i.e. <b>review</b> the code and <b>resolve</b> them
-                    <br>
-                    <code><span class="indent"><<<<<<< HEAD<br>
-                    I am the bug!<br>
-                    =======<br>
-                    No, I am the bug!<br>
-                    >>>>>>> master<br>
-                    Resolve bug<br></span></code></li>
+                        <br>
+                        <code><span class="indent"><<<<<<< HEAD<br>
+                                I am the bug!<br>
+                                =======<br>
+                                No, I am the bug!<br>
+                                >>>>>>> master<br>
+                                Resolve bug<br></span></code></li>
                 </ul>
             </div>
             <!-- Remote repositories -->
@@ -505,7 +506,7 @@
             </div>
             <!-- Now pull content to the repo -->
             <div id="pull" class="step" data-x="-3800" data-y="2800" data-z="-3000" data-rotate="80" data-scale="1">
-                <h2>Now all, pull!</h2>
+                <h2>Now all, pull!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="sailImg" src="images/sail.svg" alt="sail"></h2>
                 <h3 id='imgPull'>git commit  <img src="images/init.svg" alt="add"></h3>
                 <ul>
                     <li>You can initialize a repo with <code>git init</code></li>
@@ -531,7 +532,7 @@
             </div>
             <!-- Now add content to the repo -->
             <div id="push" class="step" data-x="-3800" data-y="800" data-z="-3000" data-rotate="80" data-scale="1">
-                <h2>Ready? push!</h2>
+                <h2>Push, push!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="babyImg" src="images/baby.png" alt="baby"></h2>
                 <h3 id='imgPush'>git push <img src="images/init.svg" alt="add"></h3>
                 <ul>
                     <li>You can initialize a repo with <code>git init</code></li>
@@ -604,9 +605,9 @@
                     <li><b>delete branches</b> that <b>you are sure</b> are unneeded! (branch overhead)</li>
                     <li>check which <b>files you are commiting</b> (stop poisoning history)</li>
                     <li><b>be careful about code formatting</b>
-                    &nbsp;&nbsp;&nbsp;→&nbsp;useful changes are hidden in noise<br>
-                    &nbsp;&nbsp;&nbsp;→&nbsp;produce conflicts<br>
-                    &nbsp;&nbsp;&nbsp;→&nbsp;make explicit commits regarding formatting changes<br></li>
+                        &nbsp;&nbsp;&nbsp;→&nbsp;useful changes are hidden in noise<br>
+                        &nbsp;&nbsp;&nbsp;→&nbsp;produce conflicts<br>
+                        &nbsp;&nbsp;&nbsp;→&nbsp;make explicit commits regarding formatting changes<br></li>
                 </ul>
             </div>
             <!-- Intro to distributed DVCS -->
