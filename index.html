@@ -52,7 +52,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>git - a little story - by Papadakos Panagiotis</title>
+        <title>git - a little tale - by Papadakos Panagiotis</title>
 
         <script>
             (function (d, ua) {
@@ -82,7 +82,7 @@
             <div id="title" class="step">
                 <h1>
                     <span class="css"><span class="d3">git</span></span><br>
-                    <span class="transforms"><em>a little story</em></span>
+                    <span class="transforms"><em>a little tale</em></span>
                 </h1>
                 <span class="author">
                     <i>by</i><br/>
@@ -385,7 +385,7 @@
             <!-- Now merge the two branches -->
             <div id="merge" class="step" data-x="1600" data-y="2400" data-z="-3000" data-rotate="100" data-scale="1">
                 <h2>merging</h2>
-                <h3 id='imgMerge'>git merge &#60;commit&#62; <img id="imgMergeImage" src="images/merge.svg" alt="add"></h3>
+                <h3>git merge &#60;commit&#62; <img id="imgMergeImage" src="images/merge.svg" alt="add"></h3>
                 <ul>
                     <li><b>Easy branching without easy merging has no value!</b></li>
                     <li>Join two or more development histories (branches) together</li>
@@ -404,15 +404,26 @@
             <div id="merge3" class="step" data-x="1600" data-y="2400" data-z="-3000" data-rotate="100" data-scale="1">
             </div>
             <!-- Resolve conflicts -->
-            <div id="mergePart2" class="step" data-x="800" data-y="2000" data-z="-3000" data-rotate="100" data-scale="1">
-                <h2>merging (2) </h2>
+            <div id="mergeSecond" class="step" data-x="800" data-y="2000" data-z="-3000" data-rotate="100" data-scale="1">
+                <h2>merging Part II </h2>
+                <h3>git merge &#60;commit&#62; <img id="imgMergeImageSecond" src="images/mergeSecond.svg" alt="add"></h3>
                 <ul>
-                    <li>You can initialize a repo with <code>git init</code></li>
-                    <li><code><span class='shell'>$</span> git init tutorial</code><br>
-                    <li>A new directory <code>tutorial</code> is created</li>
-                    <li>Inside <code>tutorial</code>, <code>.git</code> directory holds all repository information</li>
+                    <li><b>A more difficult case!</b></li>
+                    <li>Make a number of commits to <code>featureX</code></li>
+                    <li>Then go to <code>master</code></li>
+                    <li>Make a number of commits</li>
+                    <li>Merge <code>master</code> with <code>featureX</code></li>
+                    <li>A commit object can have <b>many parents</b></li>
                 </ul>
             </div>
+            <div id="mergeSecond1" class="step" data-x="800" data-y="2000" data-z="-3000" data-rotate="100" data-scale="1">
+            </div>
+            <div id="mergeSecond2" class="step" data-x="800" data-y="2000" data-z="-3000" data-rotate="100" data-scale="1">
+            </div>         
+            <div id="mergeSecond3" class="step" data-x="800" data-y="2000" data-z="-3000" data-rotate="100" data-scale="1">
+            </div>
+            <div id="mergeSecond4" class="step" data-x="800" data-y="2000" data-z="-3000" data-rotate="100" data-scale="1">
+            </div>            
             <!-- Resolve conflicts -->
             <div id="conflict" class="step" data-x="0" data-y="1800" data-z="-2000" data-rotate="90" data-scale="1">
                 <h2>conflicts</h2>
@@ -615,7 +626,7 @@
             </div>
             <!-- First Slide -->
             <div id="hippalus" class="step" data-x="-500" data-y="-1200" data-z="-3000" data-rotate="80" data-scale="1">
-                <h2>git story of <a href="http://www.ics.forth.gr/isl/Hippalus">hippalus</a></h2>
+                <h2>git tale of <a href="http://www.ics.forth.gr/isl/Hippalus">hippalus</a></h2>
                 <h3>A preference enriched faceted search exploratory system</h3>
                 <video id="hippalusVideo" preload="auto" loop autoplay width="1024" height="768">
                     <source src="video/hippalus.mp4" type="video/mp4">
@@ -648,7 +659,7 @@
                     <br>
                     You can clone and contribute
                     <br>
-                    <code>https://github.com/papadako/git-a-little-story</code>
+                    <code>https://github.com/papadako/git-a-little-tale</code>
                 </span>
             </div>
 
@@ -677,7 +688,24 @@
             $('#merge3').get(0).addEventListener('impress:stepenter', function () {
                 document.getElementById("imgMergeImage").src = "images/merge3.svg";
             });
-
+            
+            // Add callbacks for images animation for second merge part 
+            // Need it when going back
+            $('#mergeSecond').get(0).addEventListener('impress:stepenter', function () {
+                document.getElementById("imgMergeImageSecond").src = "images/mergeSecond.svg";
+            });
+            $('#mergeSecond1').get(0).addEventListener('impress:stepenter', function () {
+                document.getElementById("imgMergeImageSecond").src = "images/mergeSecond1.svg";
+            });
+            $('#mergeSecond2').get(0).addEventListener('impress:stepenter', function () {
+                document.getElementById("imgMergeImageSecond").src = "images/mergeSecond2.svg";
+            });
+            $('#mergeSecond3').get(0).addEventListener('impress:stepenter', function () {
+                document.getElementById("imgMergeImageSecond").src = "images/mergeSecond3.svg";
+            });            
+            $('#mergeSecond4').get(0).addEventListener('impress:stepenter', function () {
+                document.getElementById("imgMergeImageSecond").src = "images/mergeSecond4.svg";
+            }); 
 
         </script>
     </body>

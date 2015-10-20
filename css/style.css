@@ -801,7 +801,7 @@ label.slider input[type=range]::-webkit-slider-thumb {
     left: 850px;
 }
 
-#merge #imgMerge img {
+#merge #imgMergeImage {
     display: inline;
     width: 800px;
     position: absolute;
@@ -809,12 +809,12 @@ label.slider input[type=range]::-webkit-slider-thumb {
     left: 850px;
 }
 
-#merge #imgMerge2 img {
+#mergeSecond #imgMergeImageSecond {
     display: inline;
-    width: 800px;
+    width: 650px;
     position: absolute;
-    top: -150px;
-    left: 850px;
+    top: -250px;
+    left: 950px;
 }
 
 #conflict #imgConflict img {
