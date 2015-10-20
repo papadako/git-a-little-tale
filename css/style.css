@@ -910,6 +910,13 @@ label.slider input[type=range]::-webkit-slider-thumb {
     left: 1000px;
 }
 
+#danger #dangerImg {
+    display: inline;
+    width: 100px;
+    position: absolute;
+    top: 20px;
+    left: 500px;
+}
 #other #imgOther img {
     display: inline;
     width: 600px;
