@@ -803,18 +803,18 @@ label.slider input[type=range]::-webkit-slider-thumb {
 
 #merge #imgMerge img {
     display: inline;
-    width: 900px;
+    width: 800px;
     position: absolute;
-    top: -300px;
-    left: 800px;
+    top: -150px;
+    left: 850px;
 }
 
 #merge #imgMerge2 img {
     display: inline;
-    width: 600px;
+    width: 800px;
     position: absolute;
-    top: -200px;
-    left: 1000px;
+    top: -150px;
+    left: 850px;
 }
 
 #conflict #imgConflict img {

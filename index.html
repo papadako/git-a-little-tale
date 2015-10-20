@@ -385,7 +385,7 @@
             <!-- Now merge the two branches -->
             <div id="merge" class="step" data-x="1600" data-y="2400" data-z="-3000" data-rotate="100" data-scale="1">
                 <h2>merging</h2>
-                <h3 id='imgMerge'>git merge &#60;commit&#62; <img id="imgMergeImage" src="images/checkout.svg" alt="add"></h3>
+                <h3 id='imgMerge'>git merge &#60;commit&#62; <img id="imgMergeImage" src="images/merge.svg" alt="add"></h3>
                 <ul>
                     <li><b>Easy branching without easy merging has no value!</b></li>
                     <li>Join two or more development histories (branches) together</li>
@@ -393,7 +393,7 @@
                     <li>Incorporate them in <code>master</code> by:
                     <li>→&nbsp;<code>git checkout master</code></li>
                     <li>→&nbsp;<code>git merge featureX</code></li>
-                    <li>The simplest of all merges: fast forward! </li>
+                    <li>The simplest of all merges: <i>fast forward</i>&nbsp;! </li>
                     <li><code>git</code> has a lot of merging policies</li>
                 </ul>
             </div>
@@ -662,16 +662,23 @@
         <script type="text/javascript">
             impress().init();
             document.getElementById('hippalusVideo').play();
-
-            $('#merge1').step(function () {
+            
+            // Add callbacks for images animation in merge part
+            // Need it when going back
+            $('#merge').get(0).addEventListener('impress:stepenter', function () {
+                document.getElementById("imgMergeImage").src = "images/merge.svg";
+            });
+            $('#merge1').get(0).addEventListener('impress:stepenter', function () {
                 document.getElementById("imgMergeImage").src = "images/merge1.svg";
             });
-            $('#merge2').step(function () {
+            $('#merge2').get(0).addEventListener('impress:stepenter', function () {
                 document.getElementById("imgMergeImage").src = "images/merge2.svg";
             });
-            $('#merge3').step(function () {
+            $('#merge3').get(0).addEventListener('impress:stepenter', function () {
                 document.getElementById("imgMergeImage").src = "images/merge3.svg";
-            });            
+            });
+
+
         </script>
     </body>
 </html>
