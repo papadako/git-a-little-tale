@@ -830,12 +830,12 @@ label.slider input[type=range]::-webkit-slider-thumb {
     left: 950px;
 }
 
-#conflict #imgConflict img {
+#conflict #conflictsImg {
     display: inline;
     width: 600px;
     position: absolute;
-    top: -200px;
-    left: 1000px;
+    top: 50px;
+    left: 600px;
 }
 
 #remote #imgRemote img {

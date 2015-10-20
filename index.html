@@ -385,7 +385,7 @@
             <!-- Now merge the two branches -->
             <div id="merge" class="step" data-x="1650" data-y="2550" data-z="-3000" data-rotate="100" data-scale="1">
                 <h2>merging</h2>
-                <h3>git merge &#60;commit&#62; <img id="imgMergeImage" src="images/merge.svg" alt="add"></h3>
+                <h3>git merge &#60;commit&#62; <img id="imgMergeImage" src="images/merge.svg" alt="merging"></h3>
                 <ul>
                     <li><b>Easy branching without easy merging has no value!</b></li>
                     <li>Join two or more development histories (branches) together</li>
@@ -403,10 +403,10 @@
             </div>         
             <div id="merge3" class="step" data-x="1650" data-y="2550" data-z="-3000" data-rotate="100" data-scale="1">
             </div>
-            <!-- Resolve conflicts -->
+            <!-- Merging part b -->
             <div id="mergeSecond" class="step" data-x="800" data-y="2350" data-z="-3000" data-rotate="100" data-scale="1">
                 <h2>merging Part β </h2>
-                <h3>git merge &#60;commit&#62; <img id="imgMergeImageSecond" src="images/mergeSecond.svg" alt="add"></h3>
+                <h3>git merge &#60;commit&#62; <img id="imgMergeImageSecond" src="images/mergeSecond.svg" alt="merging2"></h3>
                 <ul>
                     <li><b>A more difficult case!</b></li>
                     <li>Make a number of commits to <code><span class="yellowBack">featureX</span></code></li>
@@ -429,16 +429,16 @@
             <!-- Resolve conflicts -->
             <div id="conflict" class="step" data-x="0" data-y="1800" data-z="-2500" data-rotate="90" data-scale="1">
                 <h2>conflicts</h2>
-                <h3 id='imgConflict'>Merging can lead to <b><span class="red">Conflicts</span></b></h3>
+                <h3 id='imgConflict'>Merging can lead to <b><span class="red">Conflicts<img id="conflictsImg" src="images/conflicts.svg" alt="merging2"></span></b></h3>
                 <ul>
                     <li><code>git</code> tries hard and is smart enough in avoiding them</li>
                     <li>But when conflicts occur, <b>no need to be scared!</b></li>
                     <li>Just <u>review the code and resolve them</u></li>
                     <br>
                     <code class><span class="indent"><<<<<<< HEAD<br>
-                    This is the bug!<br>
+                    I am the bug!<br>
                     =======<br>
-                    No, this is the bug!<br>
+                    No, I am the bug!<br>
                     >>>>>>> master<br>
                     Resolve bug<br></span></code>
                 </ul>
