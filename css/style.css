@@ -835,7 +835,7 @@ label.slider input[type=range]::-webkit-slider-thumb {
     width: 650px;
     position: absolute;
     top: -200px;
-    left: 950px;
+    left: 980px;
 }
 
 #conflict #conflictsImg {
@@ -910,12 +910,20 @@ label.slider input[type=range]::-webkit-slider-thumb {
     left: 1000px;
 }
 
+#history #pillarImg {
+    display: inline;
+    width: 100px;
+    position: absolute;
+    top: 30px;
+    left: 350px;
+}
+
 #danger #dangerImg {
     display: inline;
     width: 100px;
     position: absolute;
     top: 20px;
-    left: 500px;
+    left: 550px;
 }
 #other #imgOther img {
     display: inline;
