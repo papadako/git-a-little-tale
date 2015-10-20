@@ -1687,8 +1687,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7071068"
-     inkscape:cx="97.591504"
-     inkscape:cy="578.30202"
+     inkscape:cx="-211.21122"
+     inkscape:cy="606.01198"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1715,7 +1715,7 @@
      id="layer1"
      transform="translate(0,-4.7244098e-6)">
     <rect
-       style="fill:#808000;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;filter:url(#filter4160-4-3)"
+       style="fill:#00ff00;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;filter:url(#filter4160-4-3)"
        id="rect4152"
        width="150.53227"
        height="61.094257"
@@ -2144,5 +2144,22 @@
        d="m 113.13709,259.69553 0,65.76093"
        id="path4999"
        inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="457.27625"
+       y="923.18347"
+       id="text4604"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4606"
+         x="457.27625"
+         y="923.18347"
+         style="font-size:50px">Commit</tspan><tspan
+         sodipodi:role="line"
+         x="457.27625"
+         y="985.68347"
+         id="tspan4608"
+         style="font-size:50px">master</tspan></text>
   </g>
 </svg>

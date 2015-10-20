@@ -94,7 +94,7 @@
 
             </div>
             <!-- First Slide -->
-            <div id="intro" class="step" data-x="500" data-y="-1200" data-z="-3000" data-rotate="100" data-scale="1">
+            <div id="intro" class="step" data-x="600" data-y="-1200" data-z="-3000" data-rotate="100" data-scale="1">
                 <h2>intro to VCS</h2>
                 <h3><b> Version Control Systems (VCS)</b></h3>
                 <ul>
@@ -112,7 +112,7 @@
             </div>
 
             <!-- Some historical clues -->
-            <div id="history" class="step" data-x="1500" data-y="-1200" data-z="-3000" data-rotate="100" data-scale="1">
+            <div id="history" class="step" data-x="1700" data-y="-1200" data-z="-3000" data-rotate="100" data-scale="1">
                 <h2>history</h2>
                 <h4><b>Before-VCS epoch</b></h4>
                 <ul>
@@ -137,7 +137,7 @@
                 </ul>
             </div>
             <!-- Intro to distributed DVCS -->
-            <div id="distributed" class="step" data-x="2500" data-y="-1200" data-z="-3000" data-rotate="100" data-scale="1">
+            <div id="distributed" class="step" data-x="2800" data-y="-1200" data-z="-3000" data-rotate="100" data-scale="1">
                 <h2>DVCS vs CVCS</h2>
                 <h3 id="imgCentr">Centralized <img src="images/centralized.svg" alt="centralized"></h3>
                 <ul>
@@ -162,7 +162,7 @@
             </div>
             <!-- Have to find a recent comparison and evaluate what is written here! -->
             <!-- Things change rapidly -->
-            <div id="comparison" class="step" data-x="3500" data-y="-1200" data-z="-3000" data-rotate="100" data-scale="1">
+            <div id="comparison" class="step" data-x="3900" data-y="-1200" data-z="-3000" data-rotate="100" data-scale="1">
                 <h2>comparison</h2>
                 <table id="t01">
                     <tr>
@@ -246,7 +246,7 @@
                     <h3><b> git ≈ hg</b></h3>
                 </table>
             </div>
-            <div id="trends" class="step" data-x="750" data-y="-100" data-rotate="10" data-scale="0.4">
+            <div id="trends" class="step" data-x="750" data-y="-200" data-rotate="10" data-scale="0.4">
                 <h2>Trends</h2>
                 <img style="float:right" src="images/trends.jpg" alt="Linus Torvalds">
                 <h3><b> git has better marketing</b></h3>
@@ -256,7 +256,7 @@
             <!-- SECOND PART: BASIC GIT USAGE (local) -->
 
             <!-- Introduction of us to git -->
-            <div id="hi" class="step" data-x="1800" data-y="800" data-z="-3000" data-rotate="100" data-scale="1">
+            <div id="hi" class="step" data-x="1600" data-y="600" data-z="-3000" data-rotate="100" data-scale="1">
                 <h2>hi, I am git</h2>
                 <h3>Who are you?</h3>
                 <ul>
@@ -281,7 +281,7 @@
                 </ul>
             </div>
             <!-- Initialize your first repo -->
-            <div id="init" class="step" data-x="2800" data-y="900" data-z="-3000" data-rotate="100" data-scale="1">
+            <div id="init" class="step" data-x="2700" data-y="700" data-z="-3000" data-rotate="100" data-scale="1">
                 <h2>your first repo</h2>
                 <h3 id='imgInit'>git init <img src="images/init.svg" alt="init"></h3>
                 <ul>
@@ -306,30 +306,31 @@
                 </ul>
             </div>
             <!-- Now add content to the repo -->
-            <div id="add" class="step" data-x="3750" data-y="1000" data-z="-3000" data-rotate="100" data-scale="1">
+            <div id="add" class="step" data-x="3800" data-y="800" data-z="-3000" data-rotate="100" data-scale="1">
                 <h2>3 trees + add</h2>
                 <h3 id='imgThreeTrees'>three trees <img src="images/threeTrees.svg" alt="add"></h3>
                 <ul>
-                    <li><code>working directory</code> → sandbox, holds the files<br></li>
-                    <li><code>index</code> → snapshot of changes proposed for next revision<br></li>
-                    <li><code>HEAD</code> → pointer to last snapshot <br></li>
-                    <li><code>HEAD</code> (usually) points where the branch points</li>
+                    <li><code><span class="greyBack">working directory<span></code> → sandbox, holds the files<br></li>
+                    <li><code><span class="redBack">index</span></code> → snapshot of changes proposed for next revision<br></li>
+                    <li><code><span class="greenBack">HEAD</span></code> → pointer to last snapshot <br></li>
+                    <li><code><span class="greenBack">HEAD</span></code> (usually) points where the branch points</li>
                 </ul>
                 <br>
                 <h3 id='imgTouch'>create our first file <img src="images/touch.svg" alt="add"></h3>
                 <ul>
+                    <li><code><span class="yellowBack">master</span></code> Current active branch (if no active branch → <i>detached mode</i>)</li>
                     <li><code><span class='shell'>$</span> touch first</code></li>
-                    <li>File added to <code>working directory</code></li>
+                    <li>File added to <code><span class="greyBack">working directory<span></code></li>
                 </ul>
                 <h3 id='imgAdd'>git add [&#60;file&#62;]<img src="images/add.svg" alt="add"></h3>
                 <ul>
                     <li>Add content to the staging index</li>
                     <li><code><span class='shell'>$</span> git add first</code><br>
-                    <li>File added to  <code>index</code></li>
+                    <li>File added to  <code><span class="redBack">index</span></code></li>
                 </ul>
             </div>
             <!-- Now commit content to the repo -->
-            <div id="commit" class="step" data-x="3600" data-y="2800" data-z="-3000" data-rotate="100" data-scale="1">
+            <div id="commit" class="step" data-x="3800" data-y="2800" data-z="-3000" data-rotate="100" data-scale="1">
                 <h2>commit & log</h2>
                 <h3 id='imgCommit'>git commit [&#60;file&#62;]<img src="images/commit.svg" alt="add">
                     <span id='imgCommit2'><img src="images/commit2.svg" alt="commit"></span></h3>
@@ -337,8 +338,8 @@
                     <li>Stores the contents of the index in a new commit object</li>
                     <li>along with who, when, and why made those changes</lli>
                     <li><i>parent</i> of commit object is the previous commit</li>
-                    <li>Creates a SHA-1 20 byte hash based on the above information</li>
-                    <li><code>HEAD</code> and <code>master</code> point to new commit</li>
+                    <li>Creates a SHA-1 20 byte hash using the above</li>
+                    <li><code><span class="greenBack">HEAD</span></code> and <code><span class="yellowBack">master</span></code> point to new commit</li>
                     <li><code><span class='shell'>$</span> git commit first</code></li>
                     <li>Add & commit the file at the same time</li>
                     <li><code><span class='shell'>$</span> git commit -a first</code><br>
@@ -348,7 +349,7 @@
                     <li><code><span class='shell'>$</span> git log --decorate --graph</code><br>
                         <code>
                             <span class='indent'>
-                                *&nbsp;commit <span class="orange">8484f4fccb80e625b7c05cdc214014a32d176777</span> <span class="blue">(HEAD)</span><br>
+                                *&nbsp;commit <span class="orange">8484f4fccb80e625b7c05cdc214014a32d176777</span> <span class="green">(HEAD)</span><br>
                                 |&nbsp;Author: Panagiotis Papadakos &#60;papadako@gmail.com&#62;<br>
                                 |&nbsp;Date:   Tue Oct 20 01:15:40 2015 +0300<br>
                                 |&nbsp;&nbsp;&nbsp;Add some content<br>
@@ -358,71 +359,72 @@
                 </ul>
             </div>
             <!-- Now make a new branch -->
-            <div id="branch" class="step" data-x="2600" data-y="2600" data-z="-3000" data-rotate="100" data-scale="1">
+            <div id="branch" class="step" data-x="2700" data-y="2650" data-z="-3000" data-rotate="100" data-scale="1">
                 <h2>branching</h2>
                 <h3 id='imgBranch'>git branch &#60;name&#62; <img src="images/branch.svg" alt="branch"></h3>
                 <ul>
                     <li>Branching is a very cheap and widely used operation</li>
                     <li>Develop features/correct bugs in isolation</li>
-                    <li>Just creates a new pointer where <code>HEAD</code> points</li>
+                    <li>Just creates a new pointer where <code><span class="greenBack">HEAD</span></code> points</li>
                     <li><code><span class='shell'>$</span> git branch featureX</code><br>
-                    <li>At each time only one active branch (marked with yellow)</li>
-                    <li><code>master</code> is the default branch (<code>commit</code> still updates the <code>master</code> pointer)</li>
+                    <li>Only one <span class="yellowBack">activeBranch</span> (the rest <span class="pinkBack">notActiveBranches</span>)</li>
+                    <li><code><span class="yellowBack">master</span></code> is the default branch (<code>commit</code> still updates the <code><span class="yellowBack">master</span></code> pointer)</li>
                 </ul>
                 <h3 id='imgCheckout'>git checkout [&#60;name&#62;] <img src="images/checkout.svg" alt="checkout"></h3>
                 <ul>
                     <li>Switch to another branch</li>
                     <li>Updates files in the working tree to match the version
                         <br>&nbsp;&nbsp;&nbsp;&nbsp;in the index or the specified tree</li>
-                    <li><code>&#60;name&#62;</code> a branch name or commit object (if not given, <code>HEAD</code>) </li>
-                    <li>Keeps modifications in working tree</li>
-                    <li>If modifications cannot be applied <b>cleanly</b></li>
-                    <li>→&nbsp;<code>git</code> <b>won't switch</b> to another branch (<code>git commit</code> or <code>git stash</code>)</li>
-                    <li><code><span class='shell'>$</span> git checkout bugX</code><br>
+                    <li><code>&#60;name&#62;</code> a branch name or commit object (if not given, <code><span class="greenBack">HEAD</span></code>) </li>
+                    <li>If modifications cannot be applied <b>cleanly</b><br>
+                        &nbsp;&nbsp;&nbsp;...<code>git</code> <b>won't switch</b> to another branch (<code>git commit</code> or <code>git stash</code>)</li>
+                    <li><code><span class='shell'>$</span> git checkout featureX</code><br>
                     </li>
                 </ul>
             </div>
             <!-- Now merge the two branches -->
-            <div id="merge" class="step" data-x="1600" data-y="2400" data-z="-3000" data-rotate="100" data-scale="1">
+            <div id="merge" class="step" data-x="1650" data-y="2550" data-z="-3000" data-rotate="100" data-scale="1">
                 <h2>merging</h2>
                 <h3>git merge &#60;commit&#62; <img id="imgMergeImage" src="images/merge.svg" alt="add"></h3>
                 <ul>
                     <li><b>Easy branching without easy merging has no value!</b></li>
                     <li>Join two or more development histories (branches) together</li>
-                    <li>Assume we made a number of commits in branch <code>featureX</code></li>
-                    <li>Incorporate them in <code>master</code> by:
-                    <li>→&nbsp;<code>git checkout master</code></li>
-                    <li>→&nbsp;<code>git merge featureX</code></li>
+                    <li>Example: Made a number of commits in branch <code><span class="yellowBack">featureX</span></code></li>
+                    <li>Incorporate them in <code><span class="pinkBack">master</span></code> by:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>git checkout master</code><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>git merge featureX</code>
                     <li>The simplest of all merges: <i>fast forward</i>&nbsp;! </li>
                     <li><code>git</code> has a lot of merging policies</li>
                 </ul>
             </div>
-            <div id="merge1" class="step" data-x="1600" data-y="2400" data-z="-3000" data-rotate="100" data-scale="1">
+            <div id="merge1" class="step" data-x="1650" data-y="2550" data-z="-3000" data-rotate="100" data-scale="1">
             </div>
-            <div id="merge2" class="step" data-x="1600" data-y="2400" data-z="-3000" data-rotate="100" data-scale="1">
+            <div id="merge2" class="step" data-x="1650" data-y="2550" data-z="-3000" data-rotate="100" data-scale="1">
             </div>         
-            <div id="merge3" class="step" data-x="1600" data-y="2400" data-z="-3000" data-rotate="100" data-scale="1">
+            <div id="merge3" class="step" data-x="1650" data-y="2550" data-z="-3000" data-rotate="100" data-scale="1">
             </div>
             <!-- Resolve conflicts -->
-            <div id="mergeSecond" class="step" data-x="800" data-y="2000" data-z="-3000" data-rotate="100" data-scale="1">
-                <h2>merging Part II </h2>
+            <div id="mergeSecond" class="step" data-x="800" data-y="2350" data-z="-3000" data-rotate="100" data-scale="1">
+                <h2>merging Part β </h2>
                 <h3>git merge &#60;commit&#62; <img id="imgMergeImageSecond" src="images/mergeSecond.svg" alt="add"></h3>
                 <ul>
                     <li><b>A more difficult case!</b></li>
-                    <li>Make a number of commits to <code>featureX</code></li>
-                    <li>Then go to <code>master</code></li>
+                    <li>Make a number of commits to <code><span class="yellowBack">featureX</span></code></li>
+                    <li>Then go to <code><span class="yellowBack">master</span></code></li>
                     <li>Make a number of commits</li>
-                    <li>Merge <code>master</code> with <code>featureX</code></li>
+                    <li>Merge <code><span class="yellowBack">master</span></code> with <code><span class="pinkBack">featureX</span></code></li>
                     <li>A commit object can have <b>many parents</b></li>
+                    <li>Even if we can fast forward... <br>
+                        &nbsp;&nbsp;&nbsp;...<code> git merge -no-ff</code> will create a new commit</li>
                 </ul>
             </div>
-            <div id="mergeSecond1" class="step" data-x="800" data-y="2000" data-z="-3000" data-rotate="100" data-scale="1">
+            <div id="mergeSecond1" class="step" data-x="800" data-y="2350" data-z="-3000" data-rotate="100" data-scale="1">
             </div>
-            <div id="mergeSecond2" class="step" data-x="800" data-y="2000" data-z="-3000" data-rotate="100" data-scale="1">
+            <div id="mergeSecond2" class="step" data-x="800" data-y="2350" data-z="-3000" data-rotate="100" data-scale="1">
             </div>         
-            <div id="mergeSecond3" class="step" data-x="800" data-y="2000" data-z="-3000" data-rotate="100" data-scale="1">
+            <div id="mergeSecond3" class="step" data-x="800" data-y="2350" data-z="-3000" data-rotate="100" data-scale="1">
             </div>
-            <div id="mergeSecond4" class="step" data-x="800" data-y="2000" data-z="-3000" data-rotate="100" data-scale="1">
+            <div id="mergeSecond4" class="step" data-x="800" data-y="2350" data-z="-3000" data-rotate="100" data-scale="1">
             </div>            
             <!-- Resolve conflicts -->
             <div id="conflict" class="step" data-x="0" data-y="1800" data-z="-2000" data-rotate="90" data-scale="1">
@@ -436,7 +438,7 @@
                 </ul>
             </div>
             <!-- Remote repositories -->
-            <div id="remote" class="step" data-x="-800" data-y="2000" data-z="-3000" data-rotate="80" data-scale="1">
+            <div id="remote" class="step" data-x="-800" data-y="2350" data-z="-3000" data-rotate="80" data-scale="1">
                 <h2>remote</h2>
                 <h3 id='imgRemote'>git merge <img src="images/init.svg" alt="add"></h3>
                 <ul>
@@ -447,7 +449,7 @@
                 </ul>
             </div>
             <!-- Now clone the two branches -->
-            <div id="clone" class="step" data-x="-1600" data-y="2400" data-z="-3000" data-rotate="80" data-scale="1">
+            <div id="clone" class="step" data-x="-1600" data-y="2550" data-z="-3000" data-rotate="80" data-scale="1">
                 <h2>cloning</h2>
                 <h3 id='imgClone'>git merge <img src="images/init.svg" alt="add"></h3>
                 <ul>
@@ -471,7 +473,7 @@
                 </ul>
             </div>
             <!-- Now make a new branch -->
-            <div id="fetch" class="step" data-x="-2600" data-y="2600" data-z="-3000" data-rotate="80" data-scale="1">
+            <div id="fetch" class="step" data-x="-2700" data-y="2650" data-z="-3000" data-rotate="80" data-scale="1">
                 <h2>fetching</h2>
                 <h3 id='imgFetch'>git branch <img src="images/init.svg" alt="add"></h3>
                 <ul>
@@ -495,7 +497,7 @@
                 </ul>
             </div>
             <!-- Now pull content to the repo -->
-            <div id="pull" class="step" data-x="-3600" data-y="2800" data-z="-3000" data-rotate="80" data-scale="1">
+            <div id="pull" class="step" data-x="-3800" data-y="2800" data-z="-3000" data-rotate="80" data-scale="1">
                 <h2>pull</h2>
                 <h3 id='imgPull'>git commit  <img src="images/init.svg" alt="add"></h3>
                 <ul>
@@ -504,6 +506,7 @@
                     <li>A new directory <code>tutorial</code> is created</li>
                     <li>Inside <code>tutorial</code>, <code>.git</code> directory holds all repository information</li>
                 </ul>
+                <br>
                 <h3>git log</h3>
                 <ul>
                     <li>An any time you can check your status with <code>git status</code></li>
@@ -517,9 +520,10 @@
                         </code>
                     </li>
                 </ul>
+                <br>
             </div>
             <!-- Now add content to the repo -->
-            <div id="push" class="step" data-x="-3750" data-y="1000" data-z="-3000" data-rotate="80" data-scale="1">
+            <div id="push" class="step" data-x="-3800" data-y="800" data-z="-3000" data-rotate="80" data-scale="1">
                 <h2>push</h2>
                 <h3 id='imgPush'>git push <img src="images/init.svg" alt="add"></h3>
                 <ul>
@@ -543,7 +547,7 @@
                 </ul>
             </div>
             <!-- Danger -->
-            <div id="danger" class="step" data-x="-2800" data-y="900" data-z="-3000" data-rotate="80" data-scale="1">
+            <div id="danger" class="step" data-x="-2700" data-y="700" data-z="-3000" data-rotate="80" data-scale="1">
                 <h2>dangerrrr!</h2>
                 <h3 id='imgDanger'>git init <img src="images/init.svg" alt="init"></h3>
                 <ul>
@@ -567,7 +571,7 @@
                 </ul>
             </div>
             <!-- Introduction of us to git -->
-            <div id="other" class="step" data-x="-1800" data-y="800" data-z="-3000" data-rotate="80" data-scale="1">
+            <div id="other" class="step" data-x="-1600" data-y="600" data-z="-3000" data-rotate="80" data-scale="1">
                 <h2>other commands</h2>
                 <h3 id='imgOther'>git tag <img src="images/init.svg" alt="init"></h3>
                 <ul>
@@ -581,7 +585,7 @@
                 <h3>git show</h3>
             </div>
             <!-- Things change rapidly -->
-            <div id="tips" class="step" data-x="-3500" data-y="-1200" data-z="-3000" data-rotate="80" data-scale="1">
+            <div id="tips" class="step" data-x="-3900" data-y="-1200" data-z="-3000" data-rotate="80" data-scale="1">
                 <h2>tips</h2>
                 <h3 id='imgTips'>some guidelines<img src="images/init.svg" alt="init"></h3>
                 <ul>
@@ -598,7 +602,7 @@
                 </ul>
             </div>
             <!-- Intro to distributed DVCS -->
-            <div id="workflows" class="step" data-x="-2500" data-y="-1200" data-z="-3000" data-rotate="80" data-scale="1">
+            <div id="workflows" class="step" data-x="-2800" data-y="-1200" data-z="-3000" data-rotate="80" data-scale="1">
                 <h2>workflows</h2>
                 <h3 id="imgWorkflows">Centralized <img src="images/centralized.svg" alt="centralized"></h3>
                 <ul>
@@ -612,7 +616,7 @@
 
             </div>
             <!-- Some historical clues -->
-            <div id="repositories" class="step" data-x="-1500" data-y="-1200" data-z="-3000" data-rotate="80" data-scale="1">
+            <div id="repositories" class="step" data-x="-1700" data-y="-1200" data-z="-3000" data-rotate="80" data-scale="1">
                 <h2>online repositories</h2>
                 <h3 id="imgRepositories">Centralized <img src="images/centralized.svg" alt="centralized"></h3>
                 <ul>
@@ -625,7 +629,7 @@
                 </ul>
             </div>
             <!-- First Slide -->
-            <div id="hippalus" class="step" data-x="-500" data-y="-1200" data-z="-3000" data-rotate="80" data-scale="1">
+            <div id="hippalus" class="step" data-x="-600" data-y="-1200" data-z="-3000" data-rotate="80" data-scale="1">
                 <h2>git tale of <a href="http://www.ics.forth.gr/isl/Hippalus">hippalus</a></h2>
                 <h3>A preference enriched faceted search exploratory system</h3>
                 <video id="hippalusVideo" preload="auto" loop autoplay width="1024" height="768">
@@ -673,7 +677,7 @@
         <script type="text/javascript">
             impress().init();
             document.getElementById('hippalusVideo').play();
-            
+
             // Add callbacks for images animation in merge part
             // Need it when going back
             $('#merge').get(0).addEventListener('impress:stepenter', function () {
@@ -688,7 +692,7 @@
             $('#merge3').get(0).addEventListener('impress:stepenter', function () {
                 document.getElementById("imgMergeImage").src = "images/merge3.svg";
             });
-            
+
             // Add callbacks for images animation for second merge part 
             // Need it when going back
             $('#mergeSecond').get(0).addEventListener('impress:stepenter', function () {
@@ -702,10 +706,10 @@
             });
             $('#mergeSecond3').get(0).addEventListener('impress:stepenter', function () {
                 document.getElementById("imgMergeImageSecond").src = "images/mergeSecond3.svg";
-            });            
+            });
             $('#mergeSecond4').get(0).addEventListener('impress:stepenter', function () {
                 document.getElementById("imgMergeImageSecond").src = "images/mergeSecond4.svg";
-            }); 
+            });
 
         </script>
     </body>

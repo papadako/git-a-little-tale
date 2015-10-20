@@ -12,6 +12,11 @@
    License: none (public domain)
 */
 
+/*
+    Panagiotis Papadakos. Presentation has been designed for nice modern
+    monitors, 1920x1280
+*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -142,7 +147,7 @@ code.snippet .comment { font-size: 0.8em; color: #777; }
 
 .step {
     min-width: 1280px;
-    padding: -20px;
+    padding: 0px;
     border-radius: 0px;
     transition: 1s;
 }
@@ -173,16 +178,24 @@ code.snippet .comment { font-size: 0.8em; color: #777; }
 }
 
 .step ul {
-    font-size: 1.2em;
+    font-size: 1.3em;
+    /*list-style-image: url('../images/git.png');*/
 }
 
 .step ul li { margin-bottom: 0.1em }
 
 .step ul li:before {
-    content: "…";
-    text-shadow: 0 0 1px rgba(30,30,30,0.9);
-    color: transparent;
+    content: "-";
+    text-shadow: 0 0 1px rgba(10,10,10,1);
     margin-right: 0.5em;
+/*        font-family: 'fontello';
+        display: inline-block;
+        font-size: 1em;
+        line-height: 0;
+        margin-left: - 1.5em;
+        width: 1.5em;
+        color: $primary-color;
+        content: '\e800';    */
 }
 
 .step ul b { font-size: 1.0em }
@@ -520,7 +533,7 @@ code.snippet .comment { font-size: 0.8em; color: #777; }
     perspective-origin: 50% 50%;
 
     overflow: hidden;
-    margin: 20px auto;
+    margin: 0px auto;
     position: relative;
 
     border-radius: 10px;
@@ -771,15 +784,15 @@ label.slider input[type=range]::-webkit-slider-thumb {
 
 #commit #imgCommit img {
     display: inline;
-    width: 1000px;
+    width: 1100px;
     position: absolute;
-    top: -500px;
-    left: 800px;
+    top: -530px;
+    left: 790px;
 }
 
 #commit #imgCommit2 img {
     display: inline;
-    width: 700px;
+    width: 750px;
     position: absolute;
     top: 100px;
     left: 920px;
@@ -789,31 +802,31 @@ label.slider input[type=range]::-webkit-slider-thumb {
     display: inline;
     width: 800px;
     position: absolute;
-    top: -300px;
-    left: 850px;
+    top: -270px;
+    left: 940px;
 }
 
 #branch #imgCheckout img {
     display: inline;
     width: 800px;
     position: absolute;
-    top: 200px;
-    left: 850px;
+    top: 230px;
+    left: 940px;
 }
 
 #merge #imgMergeImage {
     display: inline;
-    width: 800px;
+    width: 1000px;
     position: absolute;
-    top: -150px;
-    left: 850px;
+    top: -325px;
+    left: 710px;
 }
 
 #mergeSecond #imgMergeImageSecond {
     display: inline;
     width: 650px;
     position: absolute;
-    top: -250px;
+    top: -200px;
     left: 950px;
 }
 
@@ -923,12 +936,38 @@ code .indent {
     left: 150px;
 }
 
+
 .orange{
-    color: orange;
-    
+    color: orange;   
 }
+
+/* Colors used in background */
+.greyBack{
+    background: #CCCCCC;   
+}
+
+.yellowBack{
+    background: yellow;
+}
+
+.pinkBack{
+    background: HotPink;
+}
+
+.redBack{
+    background: red;
+}
+
+.greenBack{
+    background: #00FF00;
+}
+
 .blue{
     color: blue;
+}
+
+.green{
+    color:green;
 }
 
 @keyframes translate-epikurus {
