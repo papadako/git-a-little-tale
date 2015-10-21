@@ -858,7 +858,7 @@ label.slider input[type=range]::-webkit-slider-thumb {
     display: inline;
     width: 650px;
     position: absolute;
-    top: -200px;
+    top: -180px;
     left: 980px;
 }
 
@@ -891,15 +891,15 @@ label.slider input[type=range]::-webkit-slider-thumb {
     width: 100px;
     position: absolute;
     top: 20px;
-    left: 380px;
+    left: 660px;
 }
 
 #fetch #tazImg {
     display: inline;
     width: 120px;
     position: absolute;
-    top: 20px;
-    left: -120px;
+    top: 0px;
+    left: -130px;
 }
 
 #fetch #imgFetch img {
@@ -926,11 +926,11 @@ label.slider input[type=range]::-webkit-slider-thumb {
     left: 1000px;
 }
 
-#danger #imgDanger img {
+#danger #imgDanger {
     display: inline;
     width: 600px;
     position: absolute;
-    top: -200px;
+    top:0px;
     left: 1000px;
 }
 
@@ -940,6 +940,7 @@ label.slider input[type=range]::-webkit-slider-thumb {
     position: absolute;
     top: 30px;
     left: 350px;
+    transform: rotateZ(90deg);
 }
 
 #pull #sailImg {
@@ -947,7 +948,7 @@ label.slider input[type=range]::-webkit-slider-thumb {
     width: 150px;
     position: absolute;
     top: 0px;
-    left: 650px;
+    left: 550px;
 }
 
 #push #babyImg {
@@ -955,15 +956,16 @@ label.slider input[type=range]::-webkit-slider-thumb {
     width: 200px;
     position: absolute;
     top: 0px;
-    left: 550px;
+    left: 600px;
 }
 
 #danger #dangerImg {
     display: inline;
     width: 100px;
     position: absolute;
-    top: 20px;
+    top: 30px;
     left: 550px;
+    transform: rotateZ(90deg);
 }
 #other #imgOther img {
     display: inline;
@@ -977,7 +979,7 @@ label.slider input[type=range]::-webkit-slider-thumb {
     display: inline;
     width: 500px;
     position: absolute;
-    top: 0px;
+    top: -30px;
     left: 1200px;
 }
 
