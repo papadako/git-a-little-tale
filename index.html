@@ -413,7 +413,7 @@
                     <li>Then go to <code><span class="yellowBack">master</span></code></li>
                     <li>Make a number of commits</li>
                     <li>Merge <code><span class="yellowBack">master</span></code> with <code><span class="pinkBack">featureX</span></code></li>
-                    <li>If branches haven't modify the same lines, <code>git</code> has no problem!</li>
+                    <li>If branches haven't modified the same lines, <code>git</code> has no problem!</li>
                     <li>A commit object can have <b>many parents</b></li>
                     <li>Even if we can fast forward... <br>
                         &nbsp;&nbsp;&nbsp;...<code> git merge -no-ff</code> will create a new commit</li>
@@ -429,7 +429,7 @@
             </div>            
             <!-- Resolve conflicts -->
             <div id="conflict" class="step" data-x="0" data-y="2000" data-z="-2700" data-rotate="90" data-scale="1">
-                <h2><b>&infin;</b> conflicts-γ</h2>
+                <h2>conflicts-γ</h2>
                 <h3 id='imgConflict'>Merging can lead to <b><span class="red">conflicts<img id="conflictsImg" src="images/conflicts.svg" alt="merging2"></span></b></h3>
                 <ul>
                     <li><code>git</code> tries hard and is smart enough in avoiding them</li>
@@ -506,7 +506,7 @@
             </div>
             <!-- Now pull content to the repo -->
             <div id="pull" class="step" data-x="-3800" data-y="2800" data-z="-3000" data-rotate="80" data-scale="1">
-                <h2>Now, pull!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="sailImg" src="images/sail.svg" alt="sail"></h2>
+                <h2>Now, pull!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="canoeImg" src="images/canoe.png" alt="canoe"></h2>
                 <h3 id='imgPull'>git commit  <img src="images/init.svg" alt="add"></h3>
                 <ul>
                     <li>You can initialize a repo with <code>git init</code></li>
@@ -560,7 +560,6 @@
                 <h3>git remove (lose code)<img id='imgDanger' src="images/dangerosity.svg" alt="dangerosity"></h3>
                 <ul>
                     <li>Remove file from <code><span class="redBack">index</span></code>  or from <code><span class="redBack">index</span></code>  and <code><span class="greyBack">working directory</span></code></li>
-                    <li><code><span class='shell'>$</span> git status</code><br></li>
                 </ul>
                 <h3>git rebase (harder collaboration)</h3>
                 <ul>
@@ -600,6 +599,7 @@
                     <li><b>delete branches</b> that <b>you are sure</b> are unneeded! (branch overhead)</li>
                     <li>check which <b>files you are commiting</b> (stop poisoning history)</li>
                     <li>do not commit passwords (they will always be in the history)</li>
+                    <li>when changes are pushed, you can't take them back (almost)</li>
                     <li><b>be careful about code formatting</b><br>
                         &nbsp;&nbsp;&nbsp;→&nbsp;useful changes are hidden in noise<br>
                         &nbsp;&nbsp;&nbsp;→&nbsp;produce conflicts<br>

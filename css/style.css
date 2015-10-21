@@ -943,12 +943,13 @@ label.slider input[type=range]::-webkit-slider-thumb {
     transform: rotateZ(90deg);
 }
 
-#pull #sailImg {
+#pull #canoeImg {
     display: inline;
-    width: 150px;
+    width: 200px;
     position: absolute;
     top: 0px;
-    left: 550px;
+    left: 500px;
+    transform: rotateZ(90deg);
 }
 
 #push #babyImg {
