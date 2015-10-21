@@ -171,7 +171,7 @@ code.snippet .comment { font-size: 0.8em; color: #777; }
     position: absolute;
     border: 10px solid #333;
     border-radius: 20px;
-    border-style:  
+    border-style:  0px;
         /*width: 500px;
         height: 500px; */
 
@@ -186,7 +186,8 @@ code.snippet .comment { font-size: 0.8em; color: #777; }
     /*    -webkit-transition: -webkit-filter .05s linear;
         -moz-transition:    -moz-filter .05s linear;
         transition:         filter .05s linear;
-        -webkit-filter: blur(5px); -moz-filter: blur(5px); -o-filter: blur(5px); -ms-filter: blur(5px); filter: blur(5px);*/
+        -webkit-filter: blur(5px); -moz-filter: blur(5px); -o-filter: blur(5px); -ms-filter: blur(5px); filter: blur(5px);
+        */
 }
 
 .step h3 {
@@ -762,7 +763,7 @@ label.slider input[type=range]::-webkit-slider-thumb {
     width: 600px;
     position: absolute;
     top: -90px;
-    left: 1000px;
+    left: 1010px;
 }
 
 #distributed #imgDistr img {
@@ -770,7 +771,7 @@ label.slider input[type=range]::-webkit-slider-thumb {
     width: 600px;
     position: absolute;
     top: 370px;
-    left: 1000px;
+    left: 1010px;
 }
 
 #init #imgInit img {
@@ -872,18 +873,18 @@ label.slider input[type=range]::-webkit-slider-thumb {
 
 #remote #imgRemote {
     display: inline;
-    width: 800px;
+    width: 730px;
     position: absolute;
-    top: -150px;
-    left:800px;
+    top: -250px;
+    left:840px;
 }
 
-#clone #imgClone img {
+#clone #imgClone {
     display: inline;
-    width: 600px;
+    width: 1000px;
     position: absolute;
-    top: -200px;
-    left: 1000px;
+    top: 444px;
+    left:290px;
 }
 
 #clone #sheepImg {
@@ -891,7 +892,7 @@ label.slider input[type=range]::-webkit-slider-thumb {
     width: 100px;
     position: absolute;
     top: 20px;
-    left: 660px;
+    left: 790px;
 }
 
 #fetch #tazImg {
@@ -902,28 +903,28 @@ label.slider input[type=range]::-webkit-slider-thumb {
     left: -130px;
 }
 
-#fetch #imgFetch img {
+#fetch #imgFetch {
     display: inline;
-    width: 600px;
+    width: 1000px;
     position: absolute;
-    top: -200px;
-    left: 1000px;
+    top: 444px;
+    left:290px;
 }
 
-#pull #imgPull img {
+#pull #imgPull {
     display: inline;
-    width: 600px;
+    width: 1000px;
     position: absolute;
-    top: -200px;
-    left: 1000px;
+    top: 444px;
+    left:290px;
 }
 
-#push #imgPush img {
+#push #imgPush {
     display: inline;
-    width: 600px;
+    width: 1000px;
     position: absolute;
-    top: -200px;
-    left: 1000px;
+    top: 444px;
+    left:290px;
 }
 
 #danger #imgDanger {
@@ -957,7 +958,7 @@ label.slider input[type=range]::-webkit-slider-thumb {
     width: 200px;
     position: absolute;
     top: 0px;
-    left: 600px;
+    left: 575px;
 }
 
 #danger #dangerImg {
