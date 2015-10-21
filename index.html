@@ -456,7 +456,7 @@
                     <li>All repositories are <b>equal</b></li>
                     <li>Isolated environment - manual synchronization</li>
                     <li>Supported protocols - <b>http, https, git, filesystem</b></li>
-                    <li>Create's pointers <code>branch</code>, pointing to other repo's commit objects</li>
+                    <li>Create's pointers like <code>branch</code>, pointing to other repo's commit objects</li>
                     <li><code>git remote</code> - Create connections & give nick names to online repos</li>
                     <li><code><span class='shell'>$</span> git remote add forU https://github.com/papadako/git-a-little-tale.git</code>
                     <li>Remote pointers are updated when we have network traffic</li>
@@ -466,7 +466,7 @@
             <!-- Now clone the two branches -->
             <div id="clone" class="step" data-x="-1800" data-y="2650" data-z="-3200" data-rotate="80" data-scale="1">
                 <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;clone repos, !<img id="sheepImg" src="images/sheep.svg" alt="sheep">&nbsp;&nbsp;</h2>
-                <h3>git clone <img id="imgClone" src="images/clone.svg" alt="clone"></h3>
+                <h3>git clone [&#60;repoName&#62;]<img id="imgClone" src="images/clone.svg" alt="clone"></h3>
                 <ul>
                     <li><b>Clones</b> a repo locally, into a newly created directory</li>
                     <li><b>Creates remote branches</b> for each branch in the cloned repo</li>
@@ -480,24 +480,27 @@
             <!-- Now make a fetch -->
             <div id="fetch" class="step" data-x="-2850" data-y="2800" data-z="-3200" data-rotate="80" data-scale="1">
                 <h2><img id="tazImg" src="images/taz.svg" alt="taz">, fetch it!</h2>
-                <h3>&nbsp;&nbsp;&nbsp;git fetch <img id='imgFetch' src="images/fetch.svg" alt="fetch"></h3>
+                <h3>git fetch [&#60;remote&#62;]<img id='imgFetch' src="images/fetch.svg" alt="fetch"></h3>
                 <ul>
                     <li>Brings commits from online repo to local</li>
-                    <li><code><span class='shell'>$</span> git fetch origin</code><br>
-                    <li>A new directory <code>tutorial</code> is created</li>
-                    <li>Inside <code>tutorial</code>, <code>.git</code> directory holds all repository information</li>
+                    <li>Does not merge the changes though</li>
+                    <li>Integration of changes:  a two step process</li>
+                    <li><code><span class='shell'>$</span>git fetch origin</code> (fetches all online branches of remote <code>origin</code>)</li>
+                    <li><code><span class='shell'>$</span>git fetch origin bname</code> (fetches only <code>origin/bname</code>)</li>
                 </ul>
                 <br><br><br><br><br><br><br><br><br>
             </div>
             <!-- Now pull content to the repo -->
             <div id="pull" class="step" data-x="-3950" data-y="2950" data-z="-3200" data-rotate="80" data-scale="1">
                 <h2>Now, pull!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="canoeImg" src="images/canoe.png" alt="canoe"></h2>
-                <h3>git pull  <img id='imgPull' src="images/pull.svg" alt="pull"></h3>
+                <h3>git pull [&#60;remote&#62;]  <img id='imgPull' src="images/pull.svg" alt="pull"></h3>
                 <ul>
-                    <li>You can initialize a repo with <code>git init</code></li>
-                    <li><code><span class='shell'>$</span> git init tutorial</code><br>
-                    <li>A new directory <code>tutorial</code> is created</li>
-                    <li>Inside <code>tutorial</code>, <code>.git</code> directory holds all repository information</li>
+                    <li>Merging upstream changes into a local repository is a common task</li>
+                    <li><code>pull</code> makes this two step process in a single step</li>
+                    <li><code><span class='shell'>$</span> git pull</code> is the same as:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code><span class='shell'>$</span> git fetch &#60;remote&#62;</code><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code><span class='shell'>$</span> git merge origin/&#60;current-branch&#62;</code> is the same as:</li>
+                    <li>Can lead to conflicts as any other <code>merge</code></li>
                 </ul>
                 <br><br><br><br><br><br><br><br><br>
             </div>
@@ -564,9 +567,9 @@
                     <li>do not commit passwords (they will always be in the history)</li>
                     <li>when changes are pushed, you can't take them back (almost)</li>
                     <li><b>be careful about code formatting</b><br>
-                        &nbsp;&nbsp;&nbsp;→&nbsp;useful changes are hidden in noise<br>
+                        &nbsp;&nbsp;&nbsp;→&nbsp;changes are hidden in noise<br>
                         &nbsp;&nbsp;&nbsp;→&nbsp;produce conflicts<br>
-                        &nbsp;&nbsp;&nbsp;→&nbsp;make explicit commits regarding formatting changes<br></li>
+                        &nbsp;&nbsp;&nbsp;→&nbsp;make explicit commits for formatting<br></li>
                 </ul>
             </div>
             <!-- Intro to distributed DVCS -->
