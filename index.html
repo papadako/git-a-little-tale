@@ -447,13 +447,16 @@
             </div>
             <!-- Remote repositories -->
             <div id="remote" class="step" data-x="-750" data-y="2350" data-z="-3000" data-rotate="80" data-scale="1">
-                <h2><span class="blueBack">↷ Share!</span></h2>
-                <h3 id='imgRemote'>remote <img src="images/init.svg" alt="add"></h3>
+                <h2><span class="blueBack">On-line repos!</span></h2>
+                <h3>git remote <img id="imgRemote" src="images/remote.svg" alt="remote"></h3>
                 <ul>
-                    <li>You can initialize a repo with <code>git init</code></li>
-                    <li><code><span class='shell'>$</span> git init tutorial</code><br>
-                    <li>A new directory <code>tutorial</code> is created</li>
-                    <li>Inside <code>tutorial</code>, <code>.git</code> directory holds all repository information</li>
+                    <li>The whole thing is about <b>collaboration!</b></li>
+                    <li><code>git</code> does not have a central repository like <code>SVN</code></li>
+                    <li>Repositories have to be uploaded, so others can have access to</li>
+                    <li>All repositories are equal & you just synchronize between them</li>
+                    <li>Give nick names to online repositories using <code>git remote</code></li>
+                    <li><code><span class='shell'>$</span> git remote add github https://github.com/papadako/git-a-little-tale.git</code>
+                    <li>Supports a number of protocols, like http, https, git, filesystem</li>
                 </ul>
             </div>
             <!-- Now clone the two branches -->
@@ -557,19 +560,23 @@
             <!-- Danger -->
             <div id="danger" class="step" data-x="-2700" data-y="700" data-z="-3000" data-rotate="80" data-scale="1">
                 <h2>dangerrr!!!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="dangerImg" src="images/danger.svg" alt="danger"></h2>
-                <h3>git rm (lose code)<img id='imgDanger' src="images/dangerosity.svg" alt="dangerosity"></h3>
-                <ul>
-                    <li>Remove file from <code><span class="redBack">index</span></code>  or from <code><span class="redBack">index</span></code>  and <code><span class="greyBack">working directory</span></code></li>
-                </ul>
                 <h3>git rebase (harder collaboration)</h3>
                 <ul>
                     <li>User can change the history</li>
                     <li>Userful for <b>non-pushed</b> commits only, else collaboration is harder</li>
                 </ul>
-                <h3>git reset --hard (lose code)</h3>
+                <h3>git reset [&#60;name&#62;](lose commits)</h3>
+                <ul>
+                    <li>Move <code><span class="yellowBack">branch</span></code>, <code><span class="greenBack">HEAD</span></code> to specific commit</li>
+                    <li><code><span class="redBack">index</span></code>  and <code><span class="greyBack">working directory</span></code> do not change</li>
+                </ul> 
+                <h3>git rm (lose code)<img id='imgDanger' src="images/dangerosity.svg" alt="dangerosity"></h3>
+                <ul>
+                    <li>Remove file from <code><span class="redBack">index</span></code>  or from <code><span class="redBack">index</span></code>  and <code><span class="greyBack">working directory</span></code></li>
+                </ul>
+                <h3>git reset --hard [&#60;name&#62;](lose code)</h3>
                 <ul>
                     <li>Move <code><span class="yellowBack">branch</span></code>, <code><span class="greenBack">HEAD</span></code>, <code><span class="redBack">index</span></code>  and <code><span class="greyBack">working directory</span></code> to specific commit</li>
-                    <li><code>git checkout</code> is <b>not equivalent</b></li>
                 </ul>                
             </div>
             <!-- Introduction of us to git -->

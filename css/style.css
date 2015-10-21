@@ -870,12 +870,12 @@ label.slider input[type=range]::-webkit-slider-thumb {
     left: 600px;
 }
 
-#remote #imgRemote img {
+#remote #imgRemote {
     display: inline;
-    width: 600px;
+    width: 800px;
     position: absolute;
-    top: -200px;
-    left: 1000px;
+    top: -100px;
+    left: 900px;
 }
 
 #clone #imgClone img {
@@ -931,7 +931,7 @@ label.slider input[type=range]::-webkit-slider-thumb {
     width: 600px;
     position: absolute;
     top:0px;
-    left: 1000px;
+    left: 1080px;
 }
 
 #history #pillarImg {
