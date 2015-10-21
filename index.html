@@ -404,7 +404,7 @@
             <div id="merge3" class="step" data-x="1650" data-y="2550" data-z="-3000" data-rotate="100" data-scale="1">
             </div>
             <!-- Merging part b -->
-            <div id="mergeSecond" class="step" data-x="800" data-y="2350" data-z="-3000" data-rotate="100" data-scale="1">
+            <div id="mergeSecond" class="step" data-x="750" data-y="2350" data-z="-3000" data-rotate="100" data-scale="1">
                 <h2>merge-β </h2>
                 <h3>git merge &#60;commit&#62; <img id="imgMergeImageSecond" src="images/mergeSecond.svg" alt="merging2"></h3>
                 <ul>
@@ -415,17 +415,16 @@
                     <li>Merge <code><span class="yellowBack">master</span></code> with <code><span class="pinkBack">featureX</span></code></li>
                     <li>If branches haven't modified the same lines, <code>git</code> has no problem!</li>
                     <li>A commit object can have <b>many parents</b></li>
-                    <li>Even if we can fast forward... <br>
-                        &nbsp;&nbsp;&nbsp;...<code> git merge -no-ff</code> will create a new commit</li>
+                    <li>Even if we can fast forward <code>git merge -no-ff</code> will create a new commit</li>
                 </ul>
             </div>
-            <div id="mergeSecond1" class="step" data-x="800" data-y="2350" data-z="-3000" data-rotate="100" data-scale="1">
+            <div id="mergeSecond1" class="step" data-x="750" data-y="2350" data-z="-3000" data-rotate="100" data-scale="1">
             </div>
-            <div id="mergeSecond2" class="step" data-x="800" data-y="2350" data-z="-3000" data-rotate="100" data-scale="1">
+            <div id="mergeSecond2" class="step" data-x="750" data-y="2350" data-z="-3000" data-rotate="100" data-scale="1">
             </div>         
-            <div id="mergeSecond3" class="step" data-x="800" data-y="2350" data-z="-3000" data-rotate="100" data-scale="1">
+            <div id="mergeSecond3" class="step" data-x="750" data-y="2350" data-z="-3000" data-rotate="100" data-scale="1">
             </div>
-            <div id="mergeSecond4" class="step" data-x="800" data-y="2350" data-z="-3000" data-rotate="100" data-scale="1">
+            <div id="mergeSecond4" class="step" data-x="750" data-y="2350" data-z="-3000" data-rotate="100" data-scale="1">
             </div>            
             <!-- Resolve conflicts -->
             <div id="conflict" class="step" data-x="0" data-y="2000" data-z="-2700" data-rotate="90" data-scale="1">
@@ -435,7 +434,8 @@
                     <li><code>git</code> tries hard and is smart enough in avoiding them</li>
                     <li>But when conflicts occur, <b>no need to be scared!</b></li>
                     <li>Let them fight and choose the winner<br>
-                        &nbsp;&nbsp;&nbsp; i.e. <b>review</b> the code and <b>resolve</b> them
+                        &nbsp;&nbsp;&nbsp; i.e. <b>review</b> the code and <b>resolve</b> them</li>
+                    <li><code>git add</code> resolved files and then commit
                         <br>
                         <code><span class="indent"><<<<<<< HEAD<br>
                                 I am the bug!<br>
@@ -446,7 +446,7 @@
                 </ul>
             </div>
             <!-- Remote repositories -->
-            <div id="remote" class="step" data-x="-800" data-y="2350" data-z="-3000" data-rotate="80" data-scale="1">
+            <div id="remote" class="step" data-x="-750" data-y="2350" data-z="-3000" data-rotate="80" data-scale="1">
                 <h2><span class="blueBack">↷ Share!</span></h2>
                 <h3 id='imgRemote'>remote <img src="images/init.svg" alt="add"></h3>
                 <ul>
@@ -458,7 +458,7 @@
             </div>
             <!-- Now clone the two branches -->
             <div id="clone" class="step" data-x="-1600" data-y="2550" data-z="-3000" data-rotate="80" data-scale="1">
-                <h2>clone code &nbsp;&nbsp;!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="sheepImg" src="images/sheep.svg" alt="sheep"></h2>
+                <h2>clone repos, !&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="sheepImg" src="images/sheep.svg" alt="sheep"></h2>
                 <h3 id='imgClone'>git merge <img src="images/init.svg" alt="add"></h3>
                 <ul>
                     <li>You can initialize a repo with <code>git init</code></li>
@@ -482,7 +482,7 @@
             </div>
             <!-- Now make a fetch -->
             <div id="fetch" class="step" data-x="-2700" data-y="2650" data-z="-3000" data-rotate="80" data-scale="1">
-                <h2><img id="tazImg" src="images/taz.svg" alt="taz">fetch it!</h2>
+                <h2><img id="tazImg" src="images/taz.svg" alt="taz">, fetch it!</h2>
                 <h3 id='imgFetch'>git branch <img src="images/init.svg" alt="add"></h3>
                 <ul>
                     <li>You can initialize a repo with <code>git init</code></li>
@@ -557,7 +557,7 @@
             <!-- Danger -->
             <div id="danger" class="step" data-x="-2700" data-y="700" data-z="-3000" data-rotate="80" data-scale="1">
                 <h2>dangerrr!!!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="dangerImg" src="images/danger.svg" alt="danger"></h2>
-                <h3>git remove (lose code)<img id='imgDanger' src="images/dangerosity.svg" alt="dangerosity"></h3>
+                <h3>git rm (lose code)<img id='imgDanger' src="images/dangerosity.svg" alt="dangerosity"></h3>
                 <ul>
                     <li>Remove file from <code><span class="redBack">index</span></code>  or from <code><span class="redBack">index</span></code>  and <code><span class="greyBack">working directory</span></code></li>
                 </ul>
@@ -584,7 +584,7 @@
                 <h3>git revert</h3>
                 <h3>git mv</h3>
                 <h3>git show</h3>
-                <h3>git bisect, cherry pick, git blame, etc.</h3>
+                <h3>git bisect, cherry pick, blame, etc.</h3>
             </div>
             <!-- Things change rapidly -->
             <div id="tips" class="step" data-x="-3900" data-y="-1200" data-z="-3000" data-rotate="80" data-scale="1">
