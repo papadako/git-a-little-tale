@@ -507,12 +507,13 @@
             <!-- Now add content to the repo -->
             <div id="push" class="step" data-x="-3800" data-y="800" data-z="-3200" data-rotate="80" data-scale="1">
                 <h2>Push, push!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="babyImg" src="images/baby.png" alt="baby"></h2>
-                <h3>git push <img id='imgPush' src="images/push.svg" alt="push"></h3>
+                <h3>git push [&#60;remote&#62;][&#60;branch&#62;]<img id='imgPush' src="images/push.svg" alt="push"></h3>
                 <ul>
-                    <li>You can initialize a repo with <code>git init</code></li>
-                    <li><code><span class='shell'>$</span> git init tutorial</code><br>
-                    <li>A new directory <code>tutorial</code> is created</li>
-                    <li>Inside <code>tutorial</code>, <code>.git</code> directory holds all repository information</li>
+                    <li>Publish all commited local changes to a central repository</li>
+                    <li>Creates/updates a local branch in the destination repository</li>
+                    <li>Tags are not automatically send (use <code>--all</code> or <code>--tags</code> flags)</li>
+                    <li>If <b>non-fast-forward merge</b>, push is <b>not permitted</b> (will change commits)</li>
+                    <li>Use <code>--force</code> if you really need this <span class="red"><b>CAUTION</b></span></li>
                 </ul>
                 <br><br><br><br><br><br><br><br><br>
             </div>
@@ -540,17 +541,27 @@
             </div>
             <!-- Introduction of us to git -->
             <div id="other" class="step" data-x="-1600" data-y="600" data-z="-3000" data-rotate="80" data-scale="1">
-                <h2>et al.</h2>
-                <h3 id='imgOther'>git tag <img src="images/init.svg" alt="init"></h3>
+                <h2>et al.&nbsp;&nbsp;</h2>
+                <h3 >git tag</h3>
                 <ul>
                     <li>Add a label in a commit object</li>
                     <li><code>git tag -a v4.4.4 -m 'my lucky version'</code></li>
                 </ul>
                 <h3>git stash</h3>
+                <ul>
+                    <li>If active branch is dirty and have to quickly checkout another branch</li>
+                    <li>...stash adds the modified files and staged changes in a stack</li>
+                    <li>pop re-inserts the files to the current branch</li>
+                </ul>
+                <h3>git bisect</h3>
+                <ul>
+                    <li>Find which commit introduced a bug</li>
+                </ul>
                 <h3>git revert</h3>
-                <h3>git mv</h3>
-                <h3>git show</h3>
-                <h3>git bisect, cherry pick, blame, etc.</h3>
+                <ul>
+                    <li>Revert a commit and commit the change</li>
+                </ul>                
+                <h3>git mv, show, cherry pick, blame, etc.</h3>
             </div>
             <!-- Things change rapidly -->
             <div id="tips" class="step" data-x="-3900" data-y="-1200" data-z="-3000" data-rotate="80" data-scale="1">
@@ -561,9 +572,10 @@
                     <li>be careful with <code>git mv</code> (commit both the old and new file)</li>
                     <li><b>commit often</b> (easier code review, bug tracking and merging)</li>
                     <li><b>merge master often</b> (reduces conflicts)</li>
-                    <li>keep <b>binary files</b> in another repository (overhead per each clone)</li>
+                    <li>keep <b>binary files</b> in another repository (overhead per each <code>clone</code>)</li>
+                    <li>be sure commits pass tests and compile cleanly (helps collaboration)</li>
                     <li><b>delete branches</b> that <b>you are sure</b> are unneeded! (branch overhead)</li>
-                    <li>check which <b>files you are commiting</b> (stop poisoning history)</li>
+                    <li>check which <b>files you are committing</b> (stop poisoning history)</li>
                     <li>do not commit passwords (they will always be in the history)</li>
                     <li>when changes are pushed, you can't take them back (almost)</li>
                     <li><b>be careful about code formatting</b><br>
