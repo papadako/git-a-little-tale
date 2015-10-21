@@ -786,7 +786,7 @@ label.slider input[type=range]::-webkit-slider-thumb {
     display: inline;
     width: 600px;
     position: absolute;
-    top: -50px;
+    top: -20px;
     left: 900px;
 }
 
@@ -794,7 +794,7 @@ label.slider input[type=range]::-webkit-slider-thumb {
     display: inline;
     width: 600px;
     position: absolute;
-    top: 300px;
+    top: 430px;
     left: 900px;
 }
 
@@ -803,7 +803,7 @@ label.slider input[type=range]::-webkit-slider-thumb {
     display: inline;
     width: 600px;
     position: absolute;
-    top: 600px;
+    top: 700px;
     left: 900px;
 }
 
@@ -981,7 +981,7 @@ label.slider input[type=range]::-webkit-slider-thumb {
     display: inline;
     width: 500px;
     position: absolute;
-    top: -30px;
+    top: 20px;
     left: 1200px;
 }
 
