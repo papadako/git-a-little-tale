@@ -366,7 +366,7 @@
                     <li>Branching is a very cheap and widely used operation</li>
                     <li>Develop features/correct bugs in isolation</li>
                     <li>Just creates a new pointer where <code><span class="greenBack">HEAD</span></code> points</li>
-                    <li><code><span class='shell'>$</span> git branch featureX</code><br>
+                    <li><code><span class='shell'>$</span> git branch featureX && git branch bugY</code><br>
                     <li>Only one <span class="yellowBack">activeBranch</span> (the rest <span class="pinkBack">notActiveBranches</span>)</li>
                     <li><code><span class="yellowBack">master</span></code> is the default branch (<code>commit</code> still updates the <code><span class="yellowBack">master</span></code> pointer)</li>
                 </ul>
@@ -568,8 +568,8 @@
                 </ul>
                 <h3>git reset --hard (lose code)</h3>
                 <ul>
-                    <li>Change both the <code><span class="redBack">index</span></code>  and <code><span class="greyBack">working directory</span></code></li>
-                    <li><code>git checkout</code> is equivalent</li>
+                    <li>Move <code><span class="yellowBack">branch</span></code>, <code><span class="greenBack">HEAD</span></code>, <code><span class="redBack">index</span></code>  and <code><span class="greyBack">working directory</span></code> to specific commit</li>
+                    <li><code>git checkout</code> is <b>not equivalent</b></li>
                 </ul>                
             </div>
             <!-- Introduction of us to git -->

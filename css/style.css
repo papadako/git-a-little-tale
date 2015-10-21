@@ -859,7 +859,7 @@ label.slider input[type=range]::-webkit-slider-thumb {
     width: 650px;
     position: absolute;
     top: -180px;
-    left: 980px;
+    left: 990px;
 }
 
 #conflict #conflictsImg {
