@@ -498,8 +498,8 @@
                     <li>Merging upstream changes into a local repository is a common task</li>
                     <li><code>pull</code> makes this two step process in a single step</li>
                     <li><code><span class='shell'>$</span> git pull</code> is the same as:<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code><span class='shell'>$</span> git fetch &#60;remote&#62;</code><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code><span class='shell'>$</span> git merge origin/&#60;current-branch&#62;</code> is the same as:</li>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code><span class='shell'>$</span> git fetch &#60;remote&#62;</code><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code><span class='shell'>$</span> git merge origin/&#60;current-branch&#62;</code> is the same as:</li>
                     <li>Can lead to conflicts as any other <code>merge</code></li>
                 </ul>
                 <br><br><br><br><br><br><br><br><br>
@@ -591,9 +591,9 @@
                 <ul>
                     <li>Someone initializes a central branch <b>(master)</b></li>
                     <li>Everybody clones the central repository</li>
-                    <li>Each one makes changes to the code (edit, stage, commit)</li>
+                    <li>Each one works to the code (edit, stage, commit)</li>
                     <li>Upload work in master either by using <code>git push origin master</code></li>
-                    <li>If trees have diverged, you have first <code>git pull</code></li>
+                    <li>If trees have diverged, you have first to <code>git pull</code></li>
                 </ul>
                 <h3 id="imgWorkflows2">Decentralized approach) <img src="images/centr-decentr@2x.png" alt="workflows"></h3>
                 <br><br><br><br><br><br><br><br><br>
@@ -601,17 +601,83 @@
             </div>
             <!-- Some historical clues -->
             <div id="repositories" class="step" data-x="-1700" data-y="-1200" data-z="-3000" data-rotate="80" data-scale="1">
-                <h2>online repositories</h2>
-                <h3 id="imgRepositories">Centralized <img src="images/centralized.svg" alt="centralized"></h3>
-                <ul>
-                    <li>Only a single copy of the repository <b>(unsafe)</b></li>
-                    <li>Communication with the server for each operation <b>(slow)</b></li>
-                    <li>Server is offline or corrupted; no job done <b>(offline cost)</b></li>
-                    <li>Everyone has access to the repository <b>(no access control)</b></li>
-                    <li>Everything is stored to the server; even failed things <b>(redundacy)</b></li>
-                    <li><b>Pros:</b> Rather simple interaction <b>(not flexible though)</b></li>
-                </ul>
+                <h2>online repos</h2>
+                <table id="t02">
+                    <tr>
+                        <td class='hidden'> </td>
+                        <th><b>github</b></th>
+                        <th><b>Bitbucket</b></th>
+                        <th><b>gitlab</b></th>
+                    </tr>
+                    <tr>
+                        <td class='left'><b>DVCS</b></td>
+                        <td>git & hg</td>
+                        <td>hg & git</td>
+                        <td>git</td>
+                    </tr>
+                    <tr>
+                        <td class='left'><b>Free public repos</b></td>
+                        <td>Yes (unlimited members)</td>
+                        <td>Yes (team of up to 5)</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td class='left'><b>Free private repos</b></td>
+                        <td>No</td>
+                        <td>Yes(team of up to 5 - unlimited for academic reasons)</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td class='left'><b>Size of repos</b></td>
+                        <td>Unlimited</td>
+                        <td>2Gb</td>
+                        <td>10Gb</td>
+                    </tr>
+                    <tr>
+                        <td class='left'><b>Deployed</b></td>
+                        <td>Cloud</td>
+                        <td>Cloud</td>
+                        <td>Cloud or own server (paid)</td>                        
+                    </tr>
+                    <tr>
+                        <td class='left'><b>Issues</b></td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td class='left'><b>Social Aspect</b></td>
+                        <td>Strong (OS)</td>
+                        <td>Not strong</td>
+                        <td>New kid on the block</td>
+                    </tr>                    
+                    <tr>
+                        <td class='left'><b>Pull requests</b></td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td class='left'><b>Wikis</b></td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td class='left'><b>Deployment</b></td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                    </tr> 
+                    <tr>
+                        <td class='left'><b>Statistics</b></td>
+                        <td>Best</td>
+                        <td>Moderate</td>
+                        <td>?</td>
+                    </tr>                    
+                </table>
             </div>
+
             <!-- First Slide -->
             <div id="hippalus" class="step" data-x="-600" data-y="-1200" data-z="-3000" data-rotate="80" data-scale="1">
                 <h2>Do you dance?</h2>

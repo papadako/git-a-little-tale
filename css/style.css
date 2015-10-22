@@ -995,9 +995,9 @@ label.slider input[type=range]::-webkit-slider-thumb {
 
 #workflows #imgWorkflows2 img {
     display: inline;
-    width: 500px;
+    width: 550px;
     position: absolute;
-    top: 500px;
+    top: 530px;
     left: 200px;
 }
 
