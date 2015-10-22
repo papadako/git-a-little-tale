@@ -320,7 +320,7 @@
                 <h3 id='imgTouch'>create our first file <img src="images/touch.svg" alt="add"></h3>
                 <ul>
                     <li><code><span class='shell'>$</span> touch first</code></li>
-                    <li>Changes are made to <code><span class="greyBack">working directory</span></code></li>
+                    <li>File is added to <code><span class="greyBack">working directory</span></code></li>
                 </ul>
                 <h3 id='imgAdd'>git add [&#60;file&#62;]<img src="images/add.svg" alt="add"></h3>
                 <ul>
@@ -587,15 +587,16 @@
             <!-- Intro to distributed DVCS -->
             <div id="workflows" class="step" data-x="-2800" data-y="-1200" data-z="-3000" data-rotate="80" data-scale="1">
                 <h2>workflows</h2>
-                <h3 id="imgWorkflows">Centralized <img src="images/centralized.svg" alt="centralized"></h3>
+                <h3 id="imgWorkflows">Centralized SVN like) <img src="images/git-model@2x.png" alt="workflows"></h3>
                 <ul>
-                    <li>Only a single copy of the repository <b>(unsafe)</b></li>
-                    <li>Communication with the server for each operation <b>(slow)</b></li>
-                    <li>Server is offline or corrupted; no job done <b>(offline cost)</b></li>
-                    <li>Everyone has access to the repository <b>(no access control)</b></li>
-                    <li>Everything is stored to the server; even failed things <b>(redundacy)</b></li>
-                    <li><b>Pros:</b> Rather simple interaction <b>(not flexible though)</b></li>
+                    <li>Someone initializes a central branch <b>(master)</b></li>
+                    <li>Everybody clones the central repository</li>
+                    <li>Each one makes changes to the code (edit, stage, commit)</li>
+                    <li>Upload work in master either by using <code>git push origin master</code></li>
+                    <li>If trees have diverged, you have first <code>git pull</code></li>
                 </ul>
+                <h3 id="imgWorkflows2">Decentralized approach) <img src="images/centr-decentr@2x.png" alt="workflows"></h3>
+                <br><br><br><br><br><br><br><br><br>
 
             </div>
             <!-- Some historical clues -->
