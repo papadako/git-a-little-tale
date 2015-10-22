@@ -799,9 +799,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35355339"
-     inkscape:cx="-619.68131"
-     inkscape:cy="1116.9097"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="435.949"
+     inkscape:cy="1107.3923"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1478,7 +1478,7 @@
          y="-175.87704">Epicurus's </tspan><tspan
          sodipodi:role="line"
          x="158.61295"
-         y="-125.87705"
-         id="tspan4736">last commit</tspan></text>
+         y="-125.87704"
+         id="tspan4736">latest commit</tspan></text>
   </g>
 </svg>

@@ -98,13 +98,13 @@
                 <h3><b> Version Control Systems (VCS)</b></h3>
                 <ul>
                     <li><i>wise</i> programmers use a VCS in <b>code development</b></li>
-                    <li><b>track!</b> and <b>provides control</b> over changes of data</li>
+                    <li><b>tracks</b> and <b>provides control</b> over changes of data</li>
                     <li><i>more importantly</i> helps <b>collaboration!</b></li>
                     <li><b>storing</b> versions of code</li>
                     <li><b>restoring</b> code to a previous version</li>
                     <li><b>comparing changes</b> over time</li>
                     <li>understanding <b>what happened</b></li>
-                    <li>to see <b>who to blame</b> for a bug</li>
+                    <li>see <b>who to blame</b> for a bug</li>
                     <li>supports the <b>consistency & integrity</b> of data </li>
                     <li>provides a <b>backup</b> of your work</li>
                 </ul>
@@ -145,7 +145,7 @@
                     <li>Server is offline or corrupted; no work done <b>(offline cost)</b></li>
                     <li>Everyone has access to the repository <b>(no access control)</b></li>
                     <li>Everything is stored to the server; even failed things <b>(redundacy)</b></li>
-                    <li><b>Pros:</b> Rather simple interaction <b>(not flexible though)</b></li>
+                    <li><b>Pros:</b> Rather simple interaction <b>(simple but not flexible)</b></li>
                 </ul>
 
                 <h3 id="imgDistr">Distributed <img src="images/distributed.svg" alt="distributed"></h3>
@@ -394,7 +394,7 @@
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>git checkout master</code><br>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>git merge featureX</code>
                     <li>The simplest of all merges: <i>fast forward</i>&nbsp;! </li>
-                    <li><code>git</code> has a lot of merging policies</li>
+                    <!--<li><code>git</code> has a number of merging policies</li>-->
                 </ul>
             </div>
             <div id="merge1" class="step" data-x="1800" data-y="2600" data-z="-3200" data-rotate="100" data-scale="1">
@@ -499,7 +499,7 @@
                     <li><code>pull</code> makes this two step process in a single step</li>
                     <li><code><span class='shell'>$</span> git pull</code> is the same as:<br>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code><span class='shell'>$</span> git fetch &#60;remote&#62;</code><br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code><span class='shell'>$</span> git merge origin/&#60;current-branch&#62;</code> is the same as:</li>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code><span class='shell'>$</span> git merge origin/&#60;current-branch&#62;</code></li>
                     <li>Can lead to conflicts as any other <code>merge</code></li>
                 </ul>
                 <br><br><br><br><br><br><br><br><br>
@@ -571,9 +571,9 @@
                     <li><b>git tracks content</b> not files</li>
                     <li>be careful with <code>git mv</code> (commit both the old and new file)</li>
                     <li><b>commit often</b> (easier code review, bug tracking and merging)</li>
-                    <li><b>merge master often</b> (reduces conflicts)</li>
+                    <li><b>pull master often</b> (reduces conflicts)</li>
                     <li>keep <b>binary files</b> in another repository (overhead per each <code>clone</code>)</li>
-                    <li>be sure commits pass tests and compile cleanly (helps collaboration)</li>
+                    <li>make sure commits pass tests and compile cleanly (helps collaboration)</li>
                     <li><b>delete branches</b> that <b>you are sure</b> are unneeded! (branch overhead)</li>
                     <li>check which <b>files you are committing</b> (stop poisoning history)</li>
                     <li>do not commit passwords (they will always be in the history)</li>
@@ -587,7 +587,7 @@
             <!-- Intro to distributed DVCS -->
             <div id="workflows" class="step" data-x="-2800" data-y="-1200" data-z="-3000" data-rotate="80" data-scale="1">
                 <h2>workflows</h2>
-                <h3 id="imgWorkflows">Centralized SVN like) <img src="images/git-model@2x.png" alt="workflows"></h3>
+                <h3 id="imgWorkflows">Centralized (SVN like) <img src="images/git-model@2x.png" alt="workflows"></h3>
                 <ul>
                     <li>Someone initializes a central branch <b>(master)</b></li>
                     <li>Everybody clones the central repository</li>
@@ -595,7 +595,7 @@
                     <li>Upload work in master either by using <code>git push origin master</code></li>
                     <li>If trees have diverged, you have first to <code>git pull</code></li>
                 </ul>
-                <h3 id="imgWorkflows2">Decentralized approach) <img src="images/centr-decentr@2x.png" alt="workflows"></h3>
+                <h3 id="imgWorkflows2">Decentralized <img src="images/centr-decentr@2x.png" alt="workflows"></h3>
                 <br><br><br><br><br><br><br><br><br>
 
             </div>
@@ -670,7 +670,7 @@
                         <td>Yes</td>
                     </tr> 
                     <tr>
-                        <td class='left'><b>Statistics</b></td>
+                        <td class='left'><b>Code Statistics</b></td>
                         <td>Best</td>
                         <td>Moderate</td>
                         <td>?</td>
