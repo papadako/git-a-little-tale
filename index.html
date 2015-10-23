@@ -695,7 +695,7 @@
                 <h2>Do you dance?</h2>
                 <h3>Yes, with code!</h3>
                 <h4><a href="http://www.ics.forth.gr/isl/Hippalus">hippalus</a>, a Preference-enriched Faceted Search (PFS) system</h4>
-                <h4>Video shows the history of the code</h4>
+                <h4><i>Video shows the history of the code</i></h4>
                 <video id="hippalusVideo" preload="auto" loop autoplay width="1024" height="768">
                     <source src="video/hippalus.mp4" type="video/mp4">
                     Your browser does not support the video tag.
@@ -762,6 +762,9 @@
             $('#merge3').get(0).addEventListener('impress:stepenter', function () {
                 document.getElementById("imgMergeImage").src = "images/merge3.svg";
             });
+            $('#merge3').get(0).addEventListener('impress:stepout', function () {
+                document.getElementById("imgMergeImageSecond").src = "images/merge.svg";
+            });
 
             // Add callbacks for images animation for second merge part
             // Need it when going back
@@ -779,6 +782,9 @@
             });
             $('#mergeSecond4').get(0).addEventListener('impress:stepenter', function () {
                 document.getElementById("imgMergeImageSecond").src = "images/mergeSecond4.svg";
+            });
+             $('#mergeSecond4').get(0).addEventListener('impress:stepout', function () {
+                document.getElementById("imgMergeImageSecond").src = "images/mergeSecond.svg";
             });
 
         </script>
