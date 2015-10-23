@@ -549,26 +549,31 @@
             <!-- Rest of other useful commands -->
             <div id="other" class="step" data-x="-1600" data-y="600" data-z="-3200" data-rotate="80" data-scale="1">
                 <h2>et al.&nbsp;&nbsp;</h2>
-                <h3 >git tag</h3>
-                <ul>
+                <h4>git tag</h4>
+                <ul class="indent">
                     <li>Add a label in a commit object</li>
                     <li><code>git tag -a v4.4.4 -m 'my lucky version'</code></li>
                 </ul>
-                <h3>git stash</h3>
-                <ul>
-                    <li>If active branch is dirty and have to quickly checkout another branch</li>
-                    <li>...stash adds the modified files and staged changes in a stack</li>
-                    <li>pop re-inserts the files to the current branch</li>
+                <h4>git stash</h4>
+                <ul  class="indent">
+                    <li>If active branch is dirty and have <b>to quickly checkout another branch</b></li>
+                    <li><code>git stash</code> adds the modified files and staged changes in a <b>stack</b></li>
+                    <li><code>git stash pop</code> re-inserts the files to the current branch</li>
                 </ul>
-                <h3>git bisect</h3>
-                <ul>
-                    <li>Find which commit introduced a bug</li>
+                <h4>git bisect</h4>
+                <ul  class="indent">
+                    <li>Use binary search to <b>find which commit introduced a bug</b></li>
                 </ul>
-                <h3>git revert</h3>
-                <ul>
-                    <li>Revert a commit and commit the change</li>
+                <h4>git revert</h4>
+                <ul  class="indent">
+                    <li><b>Revert a commit</b> and <b>commit the change</b></li>
                 </ul>
-                <h3>git mv, show, cherry pick, blame, etc.</h3>
+                <h4>git mv, show, cherry pick, blame, etc.</h4>
+                <br>
+                <h4> There is no file <b>lock</b> command, since there is no server!</h4>
+                <ul  class="indent">
+                    <li>No locking, means <b>better parallelism & collaboration!</b></li>
+                </ul>
             </div>
             <!-- Tips for work -->
             <div id="tips" class="step" data-x="-3900" data-y="-1200" data-z="-3000" data-rotate="80" data-scale="1">

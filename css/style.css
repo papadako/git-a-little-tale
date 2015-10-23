@@ -207,6 +207,11 @@ code.snippet .comment { font-size: 0.8em; color: #777; }
     /*list-style-image: url('../images/git.png');*/
 }
 
+ul.indent {
+    position: relative;
+    left: 50px;
+}
+
 .step ul li { margin-bottom: 0.1em }
 
 .step ul li:before {
