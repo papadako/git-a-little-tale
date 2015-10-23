@@ -88,8 +88,8 @@
                     <i>by</i><br/>
                     <span class="name">Panagiotis Papadakos</span> <a href="mailto:papadako@gmail.com">papadako@gmail.com</a>
                 </span>
-                <span id="imgGit">
-                    <img src="images/git.svg" alt="git">
+                <span>
+                    <img id="imgGit" src="images/git.svg" alt="git">
                 </span>
 
             </div>
@@ -139,7 +139,7 @@
             <!-- Intro to distributed DVCS -->
             <div id="distributed" class="step" data-x="2800" data-y="-1200" data-z="-3000" data-rotate="100" data-scale="1">
                 <h2>DVCS vs CVCS</h2>
-                <h3 id="imgCentr">Centralized <img src="images/centralized.svg" alt="centralized"></h3>
+                <h3>Centralized <img id="imgCentr" src="images/centralized.svg" alt="centralized"></h3>
                 <ul>
                     <li>Only a single copy of the repository <b>(unsafe)</b></li>
                     <li>Server communication for each operation <b>(slow, needs net)</b></li>
@@ -149,7 +149,7 @@
                     <li><b>Pros:</b> Rather simple interaction <b>(simple but not flexible)</b></li>
                 </ul>
 
-                <h3 id="imgDistr">Distributed <img src="images/distributed.svg" alt="distributed"></h3>
+                <h3>Distributed <img id="imgDistr" src="images/distributed.svg" alt="distributed"></h3>
                 <ul>
                     <li>More powerful and flexible workflows <b>(promote collaboration)</b></li>
                     <li>Each user has its own repository <b>(safety)</b></li>
@@ -283,7 +283,7 @@
             <!-- Initialize your first repo -->
             <div id="init" class="step" data-x="2700" data-y="700" data-z="-3000" data-rotate="100" data-scale="1">
                 <h2>your first repo</h2>
-                <h3 id='imgInit'>git init <img src="images/init.svg" alt="init"></h3>
+                <h3>git init <img id='imgInit' src="images/init.svg" alt="init"></h3>
                 <ul>
                     <li>You can initialize a repo with <code>git init</code></li>
                     <li><code><span class='shell'>$</span> git init tutorial</code><br>
@@ -318,12 +318,12 @@
                     <li><code><span class="greenBack">HEAD</span></code> (usually) points where the branch points</li>
                 </ul>
                 <br>
-                <h3 id='imgTouch'>create our first file <img src="images/touch.svg" alt="add"></h3>
+                <h3>create our first file <img id='imgTouch' src="images/touch.svg" alt="add"></h3>
                 <ul>
                     <li><code><span class='shell'>$</span> touch first</code></li>
                     <li>File is added to <code><span class="greyBack">working directory</span></code></li>
                 </ul>
-                <h3 id='imgAdd'>git add [&#60;file&#62;]<img src="images/add.svg" alt="add"></h3>
+                <h3>git add [&#60;file&#62;]<img id='imgAdd' src="images/add.svg" alt="add"></h3>
                 <ul>
                     <li>Add content to the staging index</li>
                     <li><code><span class='shell'>$</span> git add first</code><br>
@@ -333,8 +333,8 @@
             <!-- Now commit content to the repo -->
             <div id="commit" class="step" data-x="3950" data-y="2950" data-z="-3200" data-rotate="100" data-scale="1">
                 <h2>log<span class="sub">commit</span>(code)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
-                <h3 id='imgCommit'>git commit [&#60;file&#62;]<img src="images/commit.svg" alt="add">
-                    <span id='imgCommit2'><img src="images/commit2.svg" alt="commit"></span></h3>
+                <h3>git commit [&#60;file&#62;]<img id='imgCommit' src="images/commit.svg" alt="add">
+                    <span><img id='imgCommit2' src="images/commit2.svg" alt="commit"></span></h3>
                 <ul>
                     <li>Stores the contents of the index in a new commit object</li>
                     <li>along with who, when, and why made those changes</li>
@@ -362,7 +362,7 @@
             <!-- Now make a new branch -->
             <div id="branch" class="step" data-x="2850" data-y="2800" data-z="-3200" data-rotate="100" data-scale="1">
                 <h2>Grow branches &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="cactusImg" src="images/cactus.svg" alt="cactus"></h2>
-                <h3 id='imgBranch'>git branch &#60;name&#62; <img src="images/branch.svg" alt="branch"></h3>
+                <h3>git branch &#60;name&#62; <img id='imgBranch' src="images/branch.svg" alt="branch"></h3>
                 <ul>
                     <li>Branching is a very cheap and widely used operation</li>
                     <li>Develop features/correct bugs in isolation</li>
@@ -371,7 +371,7 @@
                     <li>Only one <span class="yellowBack">activeBranch</span> (the rest <span class="pinkBack">notActiveBranches</span>)</li>
                     <li><code><span class="yellowBack">master</span></code> is the default branch (<code>commit</code> still updates the <code><span class="yellowBack">master</span></code> pointer)</li>
                 </ul>
-                <h3 id='imgCheckout'>git checkout [&#60;name&#62;] <img src="images/checkout.svg" alt="checkout"></h3>
+                <h3>git checkout [&#60;name&#62;] <img id='imgCheckout' src="images/checkout.svg" alt="checkout"></h3>
                 <ul>
                     <li>Switch to another branch</li>
                     <li>Updates files in the working tree to match the version
@@ -446,6 +446,10 @@
                                 Resolve bug<br></span></code></li>
                 </ul>
             </div>
+            
+            <!--==================================================-->
+            <!-- THIRD PART: BASIC GIT USAGE (remote) -->
+            
             <!-- Remote repositories -->
             <div id="remote" class="step" data-x="-850" data-y="2500" data-z="-3200" data-rotate="80" data-scale="1">
                 <h2><span class="blueBack">On-line repos!</span></h2>
@@ -518,6 +522,8 @@
                 </ul>
                 <br><br><br><br><br><br><br><br><br>
             </div>
+            <!--==================================================-->
+            <!-- FOURTH PART: dangerous commands, tips, services, and effects :) -->            
             <!-- Danger -->
             <div id="danger" class="step" data-x="-2700" data-y="700" data-z="-3200" data-rotate="80" data-scale="1">
                 <h2>dangerrr!!!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="dangerImg" src="images/danger.svg" alt="danger"></h2>
@@ -540,7 +546,7 @@
                     <li>Move <code><span class="yellowBack">branch</span></code>, <code><span class="greenBack">HEAD</span></code>, <code><span class="redBack">index</span></code>  and <code><span class="greyBack">working directory</span></code> to specific commit</li>
                 </ul>
             </div>
-            <!-- Introduction of us to git -->
+            <!-- Rest of other useful commands -->
             <div id="other" class="step" data-x="-1600" data-y="600" data-z="-3200" data-rotate="80" data-scale="1">
                 <h2>et al.&nbsp;&nbsp;</h2>
                 <h3 >git tag</h3>
@@ -564,7 +570,7 @@
                 </ul>                
                 <h3>git mv, show, cherry pick, blame, etc.</h3>
             </div>
-            <!-- Things change rapidly -->
+            <!-- Tips for work -->
             <div id="tips" class="step" data-x="-3900" data-y="-1200" data-z="-3000" data-rotate="80" data-scale="1">
                 <h2>tips</h2>
                 <h3>for you, not for the waiter!<img id="imgTips" src="images/waiter.svg" alt="init"></h3>
@@ -585,10 +591,10 @@
                         &nbsp;&nbsp;&nbsp;→&nbsp;make explicit commits for formatting<br></li>
                 </ul>
             </div>
-            <!-- Intro to distributed DVCS -->
+            <!-- Intro to workflows. Vincent provided approval for using them -->
             <div id="workflows" class="step" data-x="-2800" data-y="-1200" data-z="-3000" data-rotate="80" data-scale="1">
                 <h2>workflows</h2>
-                <h3 id="imgWorkflows">Centralized (SVN like) <img src="images/git-model@2x.png" alt="workflows"></h3>
+                <h3>Centralized (SVN like) <img id="imgWorkflows" src="images/git-model@2x.png" alt="workflows"></h3>
                 <ul>
                     <li>Someone initializes a central branch <b>(master)</b></li>
                     <li>Everybody clones the central repository</li>
@@ -596,7 +602,7 @@
                     <li>Upload work in master by using <code>git push origin master</code></li>
                     <li>If trees have diverged, you have first to <code>git pull</code></li>
                 </ul>
-                <h3 id="imgWorkflows2">Decentralized <img src="images/centr-decentr@2x.png" alt="workflows"></h3>
+                <h3>Decentralized <img id="imgWorkflows2" src="images/centr-decentr@2x.png" alt="workflows"></h3>
                 <br><br><br><br><br><br><br><br>
                 <span class="thanks">
                     Sketches by Vincent Driessen<br>
@@ -605,7 +611,7 @@
                 <br>
 
             </div>
-            <!-- Some historical clues -->
+            <!-- Online repositories/services -->
             <div id="repositories" class="step" data-x="-1700" data-y="-1200" data-z="-3200" data-rotate="80" data-scale="1">
                 <h2>online repos</h2>
                 <table id="t02">
@@ -684,11 +690,12 @@
                 </table>
             </div>
 
-            <!-- First Slide -->
+            <!-- Dancing with code. Video of hippalus -->
             <div id="hippalus" class="step" data-x="-600" data-y="-1200" data-z="-3000" data-rotate="80" data-scale="1">
                 <h2>Do you dance?</h2>
                 <h3>Yes, with code!</h3>
                 <h4><a href="http://www.ics.forth.gr/isl/Hippalus">hippalus</a>, a Preference-enriched Faceted Search (PFS) system</h4>
+                <h4>Video shows the history of the code</h4>
                 <video id="hippalusVideo" preload="auto" loop autoplay width="1024" height="768">
                     <source src="video/hippalus.mp4" type="video/mp4">
                     Your browser does not support the video tag.
