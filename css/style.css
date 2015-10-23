@@ -79,15 +79,15 @@ th, td {
     text-align: left;
     width: 25%;
 }
-table#t01 tr:nth-child(even) {
+table tr:nth-child(even) {
     background-color: #eee;
     width: 25%;
 }
-table#t01 tr:nth-child(odd) {
+table tr:nth-child(odd) {
     background-color:#fff;
     width: 25%;
 }
-table#t01 th	{
+table th	{
     background-color: black;
     color: white;
     width: 25%;
@@ -172,22 +172,22 @@ code.snippet .comment { font-size: 0.8em; color: #777; }
     border: 10px solid #333;
     border-radius: 20px;
     border-style:  0px;
-        /*width: 500px;
-        height: 500px; */
+    /*width: 500px;
+    height: 500px; */
 
-        /*
-         * Transitioning the blur kicks this to the GPU, the .05s is a flood control
-         * of sorts. Without a delay you're back in the same position as before with
-         * too many paints.
-         *
-         * @see jankfree.org
-         */
-        /* Have this in mind http://css3playground.com/blur-filter/
-    /*    -webkit-transition: -webkit-filter .05s linear;
-        -moz-transition:    -moz-filter .05s linear;
-        transition:         filter .05s linear;
-        -webkit-filter: blur(5px); -moz-filter: blur(5px); -o-filter: blur(5px); -ms-filter: blur(5px); filter: blur(5px);
-        */
+    /*
+     * Transitioning the blur kicks this to the GPU, the .05s is a flood control
+     * of sorts. Without a delay you're back in the same position as before with
+     * too many paints.
+     *
+     * @see jankfree.org
+     */
+    /* Have this in mind http://css3playground.com/blur-filter/
+/*    -webkit-transition: -webkit-filter .05s linear;
+    -moz-transition:    -moz-filter .05s linear;
+    transition:         filter .05s linear;
+    -webkit-filter: blur(5px); -moz-filter: blur(5px); -o-filter: blur(5px); -ms-filter: blur(5px); filter: blur(5px);
+    */
 }
 
 .step h3 {
@@ -998,7 +998,7 @@ label.slider input[type=range]::-webkit-slider-thumb {
     width: 550px;
     position: absolute;
     top: 530px;
-    left: 200px;
+    left: 0px;
 }
 
 #repositories #imgRepositories img {
@@ -1025,6 +1025,13 @@ code .shell{
 code .indent {
     position: relative;
     left: 150px;
+}
+
+span.thanks{
+    /*float:right;*/
+    position: fixed;
+    left:600px;
+    font-size: 0.7em
 }
 
 

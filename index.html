@@ -64,7 +64,7 @@
 
         <meta name="description" content="git - A short story">
         <meta name="author" content="Papadakos Panagiotis" />
-	<meta name="keywords" content="git tutorial, a little story">
+        <meta name="keywords" content="git tutorial, a little story">
 
         <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
         <link href="css/style.css" rel="stylesheet" />
@@ -164,7 +164,7 @@
             <!-- Things change rapidly -->
             <div id="comparison" class="step" data-x="3900" data-y="-1200" data-z="-3000" data-rotate="100" data-scale="1">
                 <h2>git ≈ hg</h2>
-                <table id="t01">
+                <table>
                     <tr>
                         <td class='hidden'> </td>
                         <th><b>SVN</b></th>
@@ -593,11 +593,16 @@
                     <li>Someone initializes a central branch <b>(master)</b></li>
                     <li>Everybody clones the central repository</li>
                     <li>Each one works to the code (edit, stage, commit)</li>
-                    <li>Upload work in master either by using <code>git push origin master</code></li>
+                    <li>Upload work in master by using <code>git push origin master</code></li>
                     <li>If trees have diverged, you have first to <code>git pull</code></li>
                 </ul>
                 <h3 id="imgWorkflows2">Decentralized <img src="images/centr-decentr@2x.png" alt="workflows"></h3>
-                <br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br>
+                <span class="thanks">
+                    Sketches by Vincent Driessen<br>
+                    <a href="http://nvie.com/posts/a-successful-git-branching-model/">http://nvie.com/posts/a-successful-git-branching-model/</a>
+                </span>
+                <br>
 
             </div>
             <!-- Some historical clues -->
@@ -665,7 +670,7 @@
                         <td>Yes</td>
                     </tr>
                     <tr>
-                        <td class='left'><b>Deployment</b></td>
+                        <td class='left'><b>Project Deployment</b></td>
                         <td>No</td>
                         <td>No</td>
                         <td>Yes</td>
