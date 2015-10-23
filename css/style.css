@@ -848,7 +848,7 @@ label.slider input[type=range]::-webkit-slider-thumb {
     display: inline;
     width: 800px;
     position: absolute;
-    top: 230px;
+    top: 270px;
     left: 940px;
 }
 
