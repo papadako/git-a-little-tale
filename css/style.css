@@ -14,7 +14,7 @@
 
 /*
     Panagiotis Papadakos. Presentation has been designed for nice modern
-    monitors, 1920x1280
+    monitors, 1920x1080
 */
 
 html, body, div, span, applet, object, iframe,
@@ -172,8 +172,6 @@ code.snippet .comment { font-size: 0.8em; color: #777; }
     border: 10px solid #333;
     border-radius: 20px;
     border-style:  0px;
-    /*width: 500px;
-    height: 500px; */
 
     /*
      * Transitioning the blur kicks this to the GPU, the .05s is a flood control
@@ -183,7 +181,7 @@ code.snippet .comment { font-size: 0.8em; color: #777; }
      * @see jankfree.org
      */
     /* Have this in mind http://css3playground.com/blur-filter/
-/*    -webkit-transition: -webkit-filter .05s linear;
+    -webkit-transition: -webkit-filter .05s linear;
     -moz-transition:    -moz-filter .05s linear;
     transition:         filter .05s linear;
     -webkit-filter: blur(5px); -moz-filter: blur(5px); -o-filter: blur(5px); -ms-filter: blur(5px); filter: blur(5px);
@@ -218,14 +216,6 @@ ul.indent {
     content: "-";
     text-shadow: 0 0 1px rgba(10,10,10,1);
     margin-right: 0.5em;
-    /*        font-family: 'fontello';
-            display: inline-block;
-            font-size: 1em;
-            line-height: 0;
-            margin-left: - 1.5em;
-            width: 1.5em;
-            color: $primary-color;
-            content: '\e800';    */
 }
 
 .step ul b { font-size: 1.0em }
@@ -754,6 +744,9 @@ label.slider input[type=range]::-webkit-slider-thumb {
     margin: 20px auto;
 }
 
+
+/* ABSOLUTE POSITIONING OF IMAGES */
+
 #epikurus img {
     animation: translate-epikurus 3s infinite alternate ease-in-out;
 }
@@ -1025,6 +1018,7 @@ span.thanks{
 }
 
 
+/* SOME COLOR */
 .orange{
     color: orange;
 }
@@ -1073,6 +1067,8 @@ span.thanks{
     vertical-align: sub;
     font-size: 40%;
 }
+
+/* EPICURUS JUMPS UP-DOWN ANIMATION */
 
 @keyframes translate-epikurus {
     0%   {
