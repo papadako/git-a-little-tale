@@ -758,18 +758,18 @@ label.slider input[type=range]::-webkit-slider-thumb {
 
 #distributed #imgCentr {
     display: inline;
-    width: 600px;
+    width: 550px;
     position: absolute;
-    top: -90px;
-    left: 1010px;
+    top: -100px;
+    left: 1040px;
 }
 
 #distributed #imgDistr {
     display: inline;
-    width: 600px;
+    width: 520px;
     position: absolute;
-    top: 370px;
-    left: 1010px;
+    top: 340px;
+    left: 1060px;
 }
 
 #init #imgInit {
