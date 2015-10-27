@@ -4,7 +4,7 @@ You can check the presentation at <a href="http://papadako.github.io/git-a-littl
 
 P.S.<br>
 a) CSS3 transformations seem to currently work better/faster for chrome/chromium/safari rather than firefox for impress.js. There are a number of open bugs https://github.com/impress/impress.js/issues/324 .<br>
-b) The presentation is designed for wide screens and 1920x1080 resolutions in its current form. <br>
+b) The presentation is designed for wide screens and 1920x1080 resolutions in its current form. You probably need to zoom-out for lower resolutions.<br>
 
 # Contributors
 Panagiotis Papadakos
