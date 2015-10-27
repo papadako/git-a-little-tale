@@ -3,7 +3,7 @@ A small git tutorial based on the <a href=https://github.com/impress/impress.js>
 You can check the presentation at <a href="http://papadako.github.io/git-a-little-tale/">http://papadako.github.io/git-a-little-tale/</a>
 
 P.S.<br>
-a) CSS3 transformations seem to currently work better/faster for chrome/chromium/safari rather than firefox for impress.js. There are a number of open bugs https://github.com/impress/impress.js/issues/324 for quite some time.<br>
+a) CSS3 transformations seem to currently work better/faster for chrome/chromium/safari rather than firefox for impress.js. There are a number of open bugs https://github.com/impress/impress.js/issues/324 .<br>
 b) The presentation is designed for wide screens and 1920x1080 resolutions in its current form. <br>
 
 # Contributors
