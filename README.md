@@ -52,3 +52,5 @@ danger sign svg https://commons.wikimedia.org/wiki/File:Singapore_Road_Signs_-_W
 waiter svg http://all-free-download.com/free-vector/download/vector_cartoon_chef_and_waiters_293320.html
 
 workflow sketches http://nvie.com/posts/a-successful-git-branching-model/
+
+Sketches in workflows slide were taken from http://nvie.com/posts/a-successful-git-branching-model/
